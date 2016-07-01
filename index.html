@@ -51,21 +51,18 @@
 	</div>
 	
 	
-	
-	
 	<script language="javascript">
-	function PopUp() {
+function PopUp() {
+
+	var TheURL = "https://iteuscher.github.io/bio_website/exit_popup.html";
 	var PopWidth = "50%";
 	var PopHeight = "50%";
 	var PosTop = "";
 	var PosLeft = "";
 
 	var SettingS = "toolbar=no,menubar=no,scrollbars=no,resizable=yes,width=" + PopWidth + ",height=" + PopHeight + ",top=" + PosTop + ",left=" + PosLeft;
-	var PopUp = open("","box",SettingS);
-	PopUp.document.clear();
+	var PopUp = open(TheURL,"box",SettingS);
 }
-
-window.onload=PopUp;
 </script>
 
 
