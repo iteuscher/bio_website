@@ -39,7 +39,17 @@
 	
 	
 	<div>
-	<embed code = "TicTacToe/bin/GUI.class" type="application/x-java-applet;version=1.6" width="500" height="500"></embed>
+	
+	<script src="http://www.java.com/js/deployJava.js"></script>
+<script>
+    var attributes = {
+        code:'TicTacToe/bin/GUI.class',
+    width:700, height:500} ;
+    var parameters = {};
+    var version = '1.6' ; 
+    deployJava.runApplet(attributes, parameters, version);
+</script>
+	
 	<br/><p>Tic Tac Toe in Java - a java applet I coded to play tic tac toe </p>
 	</div>
 	
