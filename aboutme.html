@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>Isaac H Teuscher - About Me</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+<body>
+
+	<div id="header">
+		<h1>About Me<h1>
+	</div>
+	
+	<br/>
+	<br/>
+	<img src="glasses.jpg" align="center" style="width:90%;height:auto;">
+	<br/> 
+	<br/> 
+	
+	
+	<p> My name is Isaac Teuscher. I currently live in Alameda, California and attend Head-Royce School in Oakland.
+	<br/> Thanks for visiting my site and learning a little more about me.  </p>
+	
+	<br/> 
+	<br/> 
+	
+	
+	<p id="agetext"> How old am I right now? </p>
+	
+	<button type="button"
+onclick="document.getElementById('agetext').innerHTML = getAge()">
+Click to find out!</button>
+
+	<script>
+			function getAge() {
+	var dateString = new Date ("1999-11-07");
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+	</script>
+
+
+
+  <br/>
+	<br/>
+	<img src="track.jpg" align="center" style="width:90%;height:auto;">
+	<br/> 
+	<br/> 
+
+
+	<br/> 
+	
+	
+	<div id ="footer">  
+	<p> <i> Site made by Isaac Teuscher in June 2016. </i> <p>
+	<a href="index.html"> Back to Homepage </a>
+	</div>
+	
+	
+</body
+
+</html>
