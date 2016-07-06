@@ -36,13 +36,12 @@ a:link, a:visited {
     text-align: center;
     display: inline-block;
     border-radius: 25px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 
 a:hover {
-    background-color: #315b7d;
-    text-decoration: underline;
+    background-color: #246992;
 }
 	
 #footer {
