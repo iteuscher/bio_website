@@ -34,14 +34,14 @@ a:link, a:visited {
     color: white;
     padding: 14px 25px;
     text-align: center;
-    text-decoration: underline;
     display: inline-block;
     border-radius: 25px;
 }
 
 
 a:hover, a:active {
-    background-color: #246992;
+    background-color: #315b7d;
+    text-decoration: underline;
 }
 	
 #footer {
