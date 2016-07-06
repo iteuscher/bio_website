@@ -36,6 +36,7 @@ a:link, a:visited {
     text-align: center;
     display: inline-block;
     border-radius: 25px;
+    text-decoration: none;
 }
 
 
