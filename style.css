@@ -6,12 +6,12 @@ body {
 	font-size: 24px;
 	text-align: center;
 	
-        animation: colorchange 60s infinite; 
-        -webkit-animation: colorchange 60s infinite; /* Chrome and Safari */
+        animation: backgroundcolorchange 60s infinite; 
+        -webkit-animation: backgroundcolorchange 60s infinite; /* Chrome and Safari */
         
     }
 
-    @keyframes colorchange
+    @keyframes backgroundcolorchange
     {
       0%   {background: #0086b3;}
       25%  {background: #0099cc;}
@@ -20,7 +20,7 @@ body {
       100% {background: #4dd2ff;}
     }
 
-    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    @-webkit-keyframes backgroundcolorchange /* Safari and Chrome - necessary duplicate */
     {
       0%   {background: #0086b3;}
       25%  {background: #0099cc;}
@@ -28,8 +28,22 @@ body {
       75%  {background: #00bfff;}
       100% {background: #4dd2ff;}
     }
+
+
 	
+    @-webkit-keyframes buttoncolorchange 
+    {
+  	      from { background-color: #4682b4; }
+        	to { background-color: hotpink; }
+	}
 	
+   @keyframes buttoncolorchange
+   {
+        from { background-color: #4682b4; }
+	to { background-color: hotpink; }
+	}
+
+
 }
 
 
@@ -66,7 +80,8 @@ a:link, a:visited {
 
 
 a:hover {
-    animation: color_change 1.5s;
+    animation: buttoncolorchange 1.5s;
+    -webkit-animation: buttoncolorchange 1.5s;
     background-color: #246992;
 }
 	
