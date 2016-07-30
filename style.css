@@ -8,7 +8,13 @@ body {
 	
         animation: colorchange 5s; /* animation-name followed by duration in seconds*/
          /* you could also use milliseconds (ms) or something like 2.5s */
-        -webkit-animation: colorchange 50s; /* Chrome and Safari */
+        -webkit-animation: colorchange 5s; /* Chrome and Safari */
+        
+        animation: colorchange 5s
+        -webkit-animation: colorchange 5s;
+        
+          animation: colorchange 5s
+        -webkit-animation: colorchange 5s;
     }
 
     @keyframes colorchange
