@@ -6,8 +6,8 @@ body {
 	font-size: 24px;
 	text-align: center;
 	
-        animation: colorchange 20s infinite; 
-        -webkit-animation: colorchange 20s infinite; /* Chrome and Safari */
+        animation: colorchange 60s infinite; 
+        -webkit-animation: colorchange 60s infinite; /* Chrome and Safari */
         
     }
 
