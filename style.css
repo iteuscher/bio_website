@@ -66,6 +66,7 @@ a:link, a:visited {
 
 
 a:hover {
+    animation: color_change 1.5s;
     background-color: #246992;
 }
 	
