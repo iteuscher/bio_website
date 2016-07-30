@@ -13,20 +13,20 @@ body {
 
     @keyframes colorchange
     {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
+      0%   {background: #0086b3;}
+      25%  {background: #0099cc;}
+      50%  {background: #00ace6;}
+      75%  {background: #00bfff;}
+      100% {background: #4dd2ff;}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
+      0%   {background: #0086b3;}
+      25%  {background: #0099cc;}
+      50%  {background: #00ace6;}
+      75%  {background: #00bfff;}
+      100% {background: #4dd2ff;}
     }
 	
 	
