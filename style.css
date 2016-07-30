@@ -34,13 +34,13 @@ body {
     @-webkit-keyframes buttoncolorchange 
     {
   	      from { background-color: #4682b4; }
-        	to { background-color: hotpink; }
+        	to { background-color: #246992; }
 	}
 	
    @keyframes buttoncolorchange
    {
         from { background-color: #4682b4; }
-	to { background-color: hotpink; }
+	to { background-color: #246992; }
 	}
 
 
