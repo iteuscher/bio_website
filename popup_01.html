@@ -17,6 +17,37 @@
   ga('create', 'UA-81833248-1', 'auto');
   ga('send', 'pageview');
          </script> 	
+	
+	<!-- cursor effect script-->	
+	<script></script>
+	<!-- Morph Spin (Image) Script by kurt Grigg --> 
+	<!-- Distributed by Hypergurl--> 
+	image=new Image(); 
+	image.src='swirl.gif'; 
+var ns=(document.layers)?1:0; var step=1; 
+var cstep = 0; var a=0; var b=100; var Xpos=0; var Ypos=0; var n=7; var colours=new 
+Array('ffffff','00ff00','aaaaff','ff00ff','ffa500','ff0000','fff000'); (document.layers)?window.captureEvents(Event.MOUSEMOVE):0; 
+function Mouse(evnt){ Ypos = (document.layers)?evnt.pageY:event.y; Xpos = (document.layers)?evnt.pageX:event.x; 
+} (document.layers)?window.onMouseMove=Mouse:document.onmousemove=Mouse; if (ns){ 
+for (i=0; i < n; i++) document.write('<LAYER NAME="nsstars'+i+'" 
+TOP=-200 LEFT=0><IMG SRC="'+image.src+'"></LAYER>'); 
+} else{ document.write('<div id="ie" style="position:absolute;top:0;left:0;"><div 
+style="position:relative">'); for (i=0; i < n; i++) document.write('<img 
+src="'+image.src+'" id="iestars" style="position:absolute;top:0px;left:0px;visibility:hidden">'); 
+document.write('</div></div>'); } function MorphSpin(){ var wdth=(document.layers)?window.innerWidth-100:document.body.clientWidth; 
+var dot=(document.layers)?document.layers["nsstars"+0]:iestars[0].style; 
+var vsblty=(document.layers)?'show':'visible'; var nvsblty=(document.layers)?'hide':'hidden'; 
+for (i = 0; i < n; i++){ dot.visibility=vsblty; dot.top=Ypos+a*Math.cos((cstep+i*4.5)/5); 
+dot.left=Xpos+a*Math.sin((cstep+i*4.5)/5); } a+=1; cstep+=step; setTimeout('MorphSpin()',10); 
+for (i = 0; i < n; i++){ var dots=(document.layers)?document.layers["nsstars"+i]:iestars[i].style; 
+if (a >= 100){ a=100; step=2.5; dots.visibility=vsblty; dots.top=Ypos+a*Math.cos((cstep-100)*i/90); 
+dots.left=Xpos+a*Math.sin((cstep-100)*i/90); } if (cstep > 182){ step=0.5; 
+dots.top=Ypos+b*Math.cos(((cstep-182)+i*4.5)/5)*Math.cos((cstep-182)/5); dots.left=Xpos+b*Math.sin(((cstep-182)+i*4.5)/5); 
+} } if (cstep > 210) b-=10; if (b < -wdth){ for (i = 0; i < n; i++){ 
+(document.layers)?document.layers["nsstars"+i].top=-200:iestars[i].style.top=-200; 
+} cstep=0; step=1; a=0; b=100; } } 
+MorphSpin(); 
+//--> </script>	
 		
 		
 	<p>You found the secret page!</p>
