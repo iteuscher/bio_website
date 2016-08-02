@@ -34,7 +34,9 @@ TOP=-200 LEFT=0><IMG SRC="'+image.src+'"></LAYER>');
 } else{ document.write('<div id="ie" style="position:absolute;top:0;left:0;"><div 
 style="position:relative">'); for (i=0; i < n; i++) document.write('<img 
 src="'+image.src+'" id="iestars" style="position:absolute;top:0px;left:0px;visibility:hidden">'); 
-document.write('</div></div>'); } function MorphSpin(){ var wdth=(document.layers)?window.innerWidth-100:document.body.clientWidth; 
+document.write('</div></div>'); } 
+
+function MorphSpin(){ var wdth=(document.layers)?window.innerWidth-100:document.body.clientWidth; 
 var dot=(document.layers)?document.layers["nsstars"+0]:iestars[0].style; 
 var vsblty=(document.layers)?'show':'visible'; var nvsblty=(document.layers)?'hide':'hidden'; 
 for (i = 0; i < n; i++){ dot.visibility=vsblty; dot.top=Ypos+a*Math.cos((cstep+i*4.5)/5); 
@@ -47,7 +49,7 @@ dots.top=Ypos+b*Math.cos(((cstep-182)+i*4.5)/5)*Math.cos((cstep-182)/5); dots.le
 (document.layers)?document.layers["nsstars"+i].top=-200:iestars[i].style.top=-200; 
 } cstep=0; step=1; a=0; b=100; } } 
 MorphSpin(); 
-//--> </script>	
+</script>	
 		
 		
 	<p>You found the secret page!</p>
