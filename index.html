@@ -34,10 +34,15 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
+    var seen= ""
     var user=getCookie("username");
-    if (user != "") {
+    if (seen == true){
+    }
+    else if (user != "") {
         alert("Welcome again " + user + "!! \n Thanks for coming back to my site :) ");
-    } else {
+        seen = true;
+    } 
+    else {
        user = prompt("Thanks for visiting my site! \n What's your name?","");
        if (user != "" && user != null) {
            setCookie("username", user, 30);
