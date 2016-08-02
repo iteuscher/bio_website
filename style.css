@@ -63,6 +63,15 @@ h1 {
 	padding:10px;
 	}
 	
+#wrapper {
+	min-height:100%;
+	position:relative;
+}	
+
+#content {
+	padding-bottom:120px; /*height of footer*/
+}
+	
 img {
 	display: block;
 	margin: auto;
@@ -90,11 +99,11 @@ a:hover {
 	background-color: #4682b4;
 	text-align: center;
 	border: 3px solid #f8f8ff;
-	border-radius: 15px;
 	width:100%;
 	bottom:0;
 	left:0;
 	position: absolute;
+	height:120px;
 }	
 
 #linkwithtext {
