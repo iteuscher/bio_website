@@ -91,11 +91,10 @@ a:hover {
 	text-align: center;
 	border: 3px solid #f8f8ff;
 	border-radius: 15px;
-	border-radius: 15px;
-	width:90%;
-	height:100px;
+	width:100%;
 	bottom:0;
 	left:0;
+	position: absolute;
 }	
 
 #linkwithtext {
