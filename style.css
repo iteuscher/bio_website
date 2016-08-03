@@ -86,8 +86,8 @@ h1 {
 #coding_project {
 	font-size: 18px;
 	border: 2px solid #f8f8ff;
-	width:85%;
-	align:center;
+	width:70%;
+	margin:auto;
 	
 }
 body:before {
