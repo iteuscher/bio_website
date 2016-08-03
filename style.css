@@ -83,6 +83,11 @@ h1 {
 	padding:10px;
 }	
 
+#coding_project {
+	font-size: 18px;
+	border: 2px solid #f8f8ff;;
+	
+}
 body:before {
   content:"";
   height:100%;
