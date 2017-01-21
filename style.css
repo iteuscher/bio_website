@@ -90,6 +90,12 @@ h1 {
 	margin:auto;
 	
 }
+
+#information
+{
+	font-size: 80%;
+}
+
 body:before {
   content:"";
   height:100%;
