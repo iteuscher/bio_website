@@ -1,0 +1,168 @@
+header {
+  padding: 154px 0 100px;
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+
+section {
+  padding: 150px 0;
+}
+
+a{
+  color: #343a40;;
+}
+
+h1 {
+color:rgb(255, 255, 255);
+font-family: Hind, sans-serif;
+font-size:50px;
+font-weight:700;
+height:100px;
+line-height:50px;
+margin-bottom: 15px;
+text-size-adjust: 100%;
+}
+
+.navbar-icon{
+width: 60%;
+}
+
+.main-img {
+    background:
+      /* linear-gradient(
+        rgba(0, 0, 0, 0.1),
+        rgba(0, 0, 0, 0.1)
+      ), */
+        url(../images/cloud_hi_photo.jpeg);
+    background-size: cover;
+    height: 100vh;
+    margin: 0 auto;
+    width: auto;
+    display: block;
+}
+
+.title {
+position: absolute;
+top: 35%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+text-align: center;
+}
+
+.spacer-small {
+  height: 3ex;
+}
+.spacer-medium {
+  height: 6ex;
+}
+.spacer-large {
+  height: 15ex;
+}
+
+
+/* -------------------------
+welcome box animation
+------------------------- */
+/* welcome to lux animation box */
+
+.svg-wrapper {
+  position: relative;
+  transform: translateY(-90%);
+	margin: 0 auto;
+  /* padding-top: 154px; */
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -422;
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: white;
+  border-bottom: 5px solid white;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
+
+
+
+
+
+/* -------------------------
+social media buttons
+------------------------- */
+#socialbox {
+  display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   min-height: 15ex;
+}
+.c-icon {
+    width:  6ex;
+    height: 6ex;
+    fill: currentColor;
+    transition: .2s;
+}
+
+.c-link--facebook:hover  { color: #3b5998 }
+.c-link--twitter:hover   { color: #55acee }
+.c-link--linkedin:hover    { color: #0077B5 }
+.c-link--email:hover { color: #bd081c }
+.c-link--instagram:hover { color: #833ab4 }
+.c-link--github:hover  { color: #333 }
+.c-link--facebook:hover::after  { background: #3b5998 }
+.c-link--twitter:hover::after   { background: #55acee }
+.c-link--linkedin:hover::after    { background: #0077B5 }
+.c-link--email:hover::after { background: #bd081c }
+.c-link--instagram:hover::after { background: #833ab4 }
+.c-link--github:hover::after  { background: #333 }
+
+.c-link {
+    position: relative;
+    /*color: #bbb;*/
+}
+
+.c-link:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+.c-tooltip::before,
+.c-tooltip::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    opacity: 0;
+    transition: .2s;
+}
+
+.c-tooltip::before {
+    content: '';
+    bottom: calc(100% + 2px);
+    border: solid 5px transparent;
+    border-top-color: currentColor;
+}
+
+.c-tooltip::after {
+    content: attr(aria-label);
+    bottom: calc(100% + 12px);
+    padding: .61em .93em;
+    font-size: .875rem;
+    color: white;
+    border-radius: 3px;
+}
+
+.c-tooltip:hover::before,
+.c-tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%);
+}
