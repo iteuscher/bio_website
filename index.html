@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="Isaac Teuscher">
     <meta name="keywords" content="Isaac Teuscher, Isaac H Teuscher, iteuscher, teuscher, isaac henry teuscher, bio, website" />
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
 
     <title>Isaac Teuscher</title>
 
@@ -24,7 +25,7 @@
   <body id="page-top">
 
   <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">  <img class="navbar-icon" src="images/icons/iht_icon_white.png"></img> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +50,15 @@
   <!-- TITLE AND MAIN IMAGE -->
     <div class="main-img" src="images/cloud_hi_photo.jpeg"> </div>
       <div class="container text-center title">
-        <h1>Isaac</br>Teuscher</h1>
+        <div class="spacer-large"> </div>
+        <h1>Isaac <br> Teuscher</h1>
         <div class="svg-wrapper">
+          <div style="margin: 5ex;"> </div>
             <svg height="130" width="250" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape" height="120" width="250" />
             </svg>
+          <div class="lead"> Student, Developer &amp; Athlete</div>
         </div>
-        <p class="lead">Student, Developer &amp; Athlete</p>
       </div>
 
 
@@ -140,28 +143,104 @@
     </section>
 
 
-  <!--  -->
-    <section id="services" class="bg-light">
+  <!--Projects-->
+    <section id="projects" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Services we offer</h2>
+            <h2>Projects</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
+
+    <!--Resume-->
+      <section id="resume">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+          <h2 style="margin-bottom: 0rem">Resume</h2>
+      <p style="margin-bottom: 2rem"> Download as PDF </p>
+
+                      <p class="major-indented">
+                        Isaac Teuscher   <br>
+                        1416 Santa Clara Ave   <br>
+                        Alameda, CA, 94501   <br>
+                        Cell: (510) 206-8202   <br>
+                        isaacteuscher@gmail.com
+                      </p>
+                  <div class="spacer-small"> </div>
+
+             <h3> Education </h3>
+                    <p class="indented">
+                        Head-Royce High School   <br>
+                        3.87 GPA   <br>
+                        ASB Treasurer
+                    </p>
+                <div class="spacer-small"> </div>
+
+
+             <h3> Work Experience </h3>
+                    <p class="indented">
+                        Company #1   <br>
+                        City, State   <br>
+                        Dates Worked   <br>
+                        Job Title   <br>
+                        - Responsibilities / Achievements
+                        - Responsibilities / Achievements
+                    </p>
+
+                    <p class="indented">
+                        Company #2   <br>
+                        City, State   <br>
+                        Dates Worked   <br>
+                        Job Title   <br>
+                        - Responsibilities / Achievements
+                        - Responsibilities / Achievements
+                    </p>
+                <div class="spacer-small"> </div>
+
+              <h3> Activities </h3>
+                    <p class="indented">
+                        Activity   <br>
+                            Leadership position (if any)
+                        Activity   <br>
+                            Leadership position (if any)
+                    </p>
+                <div class="spacer-small"> </div>
+
+              <h3> Skills </h3>
+                    <p class="indented">
+                      What skills?
+                    </p>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <!--Contact-->
+    <section id="contact" class="bg-light">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2>Contact me</h2>
+            <p class="indented lead">
+
+              <a href="mailto:isaacteuscher?Subject=Comment%20on%20personal%20website" target="_top">isaacteuscher@gmail.com</a>
+            </p>
+
           </div>
         </div>
       </div>
     </section>
+
+
 
     <!-- Footer -->
     <footer class="py-3 bg-dark">
@@ -180,6 +259,23 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- fade in menu (navbar) script -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript">
+(function($) {
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if ($(this).scrollTop() > 200) {
+          $('#menu').fadeIn(500);
+      } else {
+          $('#menu').fadeOut(500);
+      }
+  });
+});
+})(jQuery);
+</script>
+
 
   </body>
 
