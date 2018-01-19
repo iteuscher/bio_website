@@ -37,7 +37,13 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#whatilove">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -51,7 +57,7 @@
     <div class="main-img" src="images/cloud_hi_photo.jpeg"> </div>
       <div class="container text-center title">
         <div class="spacer-large"> </div>
-        <h1>Isaac <br> Teuscher</h1>
+        <h1>Isaac<br>Teuscher</h1>
         <div class="svg-wrapper">
           <div style="margin: 5ex;"> </div>
             <svg height="130" width="250" xmlns="http://www.w3.org/2000/svg">
@@ -73,6 +79,7 @@
                 I love rotisserie chicken, long beach runs, and even longer naps.
                 I have some CS proficency and am interested in front-end web development.
                 And last but not least, I'd love to connect with you below.
+            </p>
           </div>
         </div>
       </div>
@@ -149,23 +156,97 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Projects</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+            <p class="lead">Work I've done or am currently working on.</p>
+
+
+
+
+            <!-- <section class="image-grid">
+              <div class="image__cell is-collapsed">
+                <div class="image--basic">
+                  <a href="#expand-jump-1">
+                    <img id="expand-jump-1" class="basic__img" src="http://lorempixel.com/250/250/fashion/1" alt="Fashion 1" />
+                  </a>
+                  <div class="arrow--up"></div>
+                </div>
+                <div class="image--expand">
+                  <a href="#close-jump-1" class="expand__close"></a>
+                  <img class="image--large" src="http://lorempixel.com/400/400/fashion/1" alt="Fashion 1" />
+                </div>
+              </div>
+            </section> -->
+
+
+
+
+
+
+
+
+
+            <div class="expanding-grid">
+
+              	<ul class="links">
+                  <!-- coding -->
+              		<li><a href="#section1">1</a></li> <!-- the oh -->
+              		<li><a href="#section2">2</a></li>  <!-- lux -->
+              		<li><a href="#section3">3</a></li> <!-- maze explorer -->
+              		<li><a href="#section4">4</a></li>  <!-- Classy / In-n-out -->
+              		<li><a href="#section5">5</a></li>  <!-- On Pace -->
+                  <li><a href="#section7">6</a></li>  <!-- This website -->
+
+                  <!-- other -->
+              		<li><a href="#section7">7</a></li>  <!-- Eagle Scout Proj. -->
+              		<li><a href="#section8">8</a></li>  <!-- Delta Wolf 48 -->
+              		<li><a href="#section9">9</a></li>  <!-- US History research paper -->
+              		<li><a href="#section10">10</a></li> <!-- Isearch -->
+
+
+
+
           </div>
         </div>
       </div>
     </section>
 
+    <!--Projects-->
+      <section id="whatilove">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>Interests</h2>
+              <p class="lead">What I love to do.</p>
+
+                      <!-- heart animation -->
+                        <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 90 90" version="1.1">
+                          <g class="heart-loader__group">
+                            <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
+                            <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+                            <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+                            <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+                          </g>
+                        </svg>
+
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
     <!--Resume-->
-      <section id="resume">
+      <section id="resume" class="bg-light">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
 
-          <h2 style="margin-bottom: 0rem">Resume</h2>
-      <p style="margin-bottom: 2rem"> Download as PDF </p>
+          <h2>Resume</h2>
+      <p class="lead"> Click on a header to expand the section. <a href="/"> Download as PDF </a> </p>
 
-                      <p class="major-indented">
+              <h3 data-toggle="collapse" data-target="#contactinfo"> Personal Info </h3>
+                      <p id="contactinfo" class="major-indented collapse">
                         Isaac Teuscher   <br>
                         1416 Santa Clara Ave   <br>
                         Alameda, CA, 94501   <br>
@@ -174,8 +255,8 @@
                       </p>
                   <div class="spacer-small"> </div>
 
-             <h3> Education </h3>
-                    <p class="indented">
+             <h3 data-toggle="collapse" data-target="#education"> Education </h3>
+                    <p id="education" class="indented collapse">
                         Head-Royce High School   <br>
                         3.87 GPA   <br>
                         ASB Treasurer
@@ -183,17 +264,18 @@
                 <div class="spacer-small"> </div>
 
 
-             <h3> Work Experience </h3>
-                    <p class="indented">
+             <h3 data-toggle="collapse" data-target="#workexperience"> Work Experience </h3>
+                    <p id="workexperience" class="indented collapse">
                         Company #1   <br>
                         City, State   <br>
                         Dates Worked   <br>
                         Job Title   <br>
                         - Responsibilities / Achievements
                         - Responsibilities / Achievements
-                    </p>
 
-                    <p class="indented">
+                        <br>
+                        <br>
+
                         Company #2   <br>
                         City, State   <br>
                         Dates Worked   <br>
@@ -203,8 +285,8 @@
                     </p>
                 <div class="spacer-small"> </div>
 
-              <h3> Activities </h3>
-                    <p class="indented">
+              <h3 data-toggle="collapse" data-target="#activities"> Activities </h3>
+                    <p id="activities" class="indented collapse">
                         Activity   <br>
                             Leadership position (if any)
                         Activity   <br>
@@ -212,8 +294,8 @@
                     </p>
                 <div class="spacer-small"> </div>
 
-              <h3> Skills </h3>
-                    <p class="indented">
+              <h3 data-toggle="collapse" data-target="#skills"> Skills </h3>
+                    <p id="skills" class="indented collapse">
                       What skills?
                     </p>
 
@@ -225,15 +307,33 @@
 
 
   <!--Contact-->
-    <section id="contact" class="bg-light">
+    <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact me</h2>
+            <br>
             <p class="indented lead">
-
               <a href="mailto:isaacteuscher?Subject=Comment%20on%20personal%20website" target="_top">isaacteuscher@gmail.com</a>
             </p>
+            <br>
+
+    <!-- custom google maps location div -->
+          <!--  <link rel="stylesheet" href="css/custom-google-maps/reset.css"> -->  <!-- CSS reset -->
+            <link rel="stylesheet" href="css/custom-google-maps/style.css"> <!-- Resource style -->
+            <script src="js/custom-google-maps/modernizr.js"></script> <!-- Modernizr -->
+
+            <div id="cd-google-map">
+            	<div id="google-container"></div>
+            	<div id="cd-zoom-in"></div>
+            	<div id="cd-zoom-out"></div>
+            	<address>86-90 Paul Street, London, EC2A 4NE</address>
+            </div>
+
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj2rz1T8Ore_NtjAw0kiu4619EgtK26sA"></script>
+          <script src="js/custom-google-maps/main.js"></script> <!-- Resource jQuery -->
+
 
           </div>
         </div>
@@ -245,11 +345,12 @@
     <!-- Footer -->
     <footer class="py-3 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Isaac Teuscher 2018</p>
+        <p class="m-0 text-center text-white"> &copy; Isaac Teuscher 2018</p>
       </div>
-      <!-- /.container -->
     </footer>
 
+
+  <!-- JAVA SCRIPTS below -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -257,24 +358,28 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
+    <!-- Scrolling nav JavaScript theme -->
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- Expanding Grid jQuery plugin -->
+    <script src="js/expanding-grid.js"></script>
+
 
     <!-- fade in menu (navbar) script -->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript">
-(function($) {
-$(document).ready(function(){
-  $(window).scroll(function(){
-      if ($(this).scrollTop() > 200) {
-          $('#menu').fadeIn(500);
-      } else {
-          $('#menu').fadeOut(500);
-      }
-  });
-});
-})(jQuery);
-</script>
+        (function($) {
+        $(document).ready(function(){
+          $(window).scroll(function(){
+              if ($(this).scrollTop() > 200) {
+                  $('#menu').fadeIn(500);
+              } else {
+                  $('#menu').fadeOut(500);
+              }
+          });
+        });
+        })(jQuery);
+    </script>
 
 
   </body>
