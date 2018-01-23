@@ -84,8 +84,8 @@
 				setTimeout(function() {
 					classie.add(item, 'grid__item--animate');
 					// reveal/load content after the last element animates out (todo: wait for the last transition to finish)
-					setTimeout(function() { loadContent(item); }, 500);
-				}, 1000);
+					setTimeout(function() { loadContent(item); }, 300);
+				}, 250);
 			});
 		});
 

@@ -1,9 +1,9 @@
 
 jQuery(document).ready(function($){
-	//set your google maps parameters
-	var latitude = 51.5255069,
-		longitude = -0.0836207,
-		map_zoom = 14;
+	//set to alameda 
+	var latitude = 37.7652100,
+		longitude =  -122.2416400,
+		map_zoom = 10;
 
 	//google map custom marker icon - .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
