@@ -733,6 +733,7 @@ article {
     padding: 30px;
   }
 }
+
 @media screen and (min-width: 900px) {
   .grid {
     display: -webkit-box;
@@ -809,7 +810,7 @@ article {
   }
 
   .content .close-button {
-    /* padding: 10px 20px; */
+    padding: 10px 20px;
   }
 
   .content .close-button::before {
