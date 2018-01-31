@@ -7,7 +7,7 @@
   src: url("../../fonts/expanding-grid/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../../fonts/expanding-grid/codropsicons/codropsicons.woff") format("woff"), url("../../fonts/expanding-grid/codropsicons/codropsicons.ttf") format("truetype"), url("../../fonts/expanding-grid/codropsicons/codropsicons.svg#codropsicons") format("svg");
 }
 
-@import url(//fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700,900|Raleway:500|Martel+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display+SC:400italic,700,900|Raleway:500|Martel+Sans:400,700);
 @font-face {
   font-weight: normal;
   font-style: normal;
