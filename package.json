@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "browser-sync": "2.18.13",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "eslint": "^4.16.0"
   }
 }
