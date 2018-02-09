@@ -14,7 +14,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- CSS stylesheet -->
     <link href="css/mainstyle.css" rel="stylesheet">
 
     <!-- load up jquery locally instead of from online link -->
@@ -35,9 +35,21 @@
     <nav id="menu" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">  <img class="navbar-icon" src="images/icons/iht_icon_white.png"/> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+      
+        <!-- Original plain nav toggler -->
+          <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button> -->
+
+        <!-- animated nav toggler -->
+          <button class="navbar-toggler collapsed navbar-toggle" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar">  </span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -47,7 +59,7 @@
               <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#whatilove">Interests</a>
+              <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
@@ -62,33 +74,35 @@
 
   <!-- TITLE AND MAIN IMAGE -->
     <div class="main-img" src="images/cloud_hi_photo.jpeg"> </div>
-      <div class="container text-center title">
+      <div class="container text-center main-title">
         <div class="spacer-large"> </div>
         <h1>Isaac<br>Teuscher</h1>
         <div class="svg-wrapper">
           <div style="margin: 5ex;"> </div>
-            <svg height="130" width="250" xmlns="http://www.w3.org/2000/svg">
-                <rect class="shape" height="120" width="250" />
+            <svg height="150" width="320">
+                <rect class="shape" height="150" width="320" />
             </svg>
           <div class="lead"> Student, Developer &amp; Athlete</div>
         </div>
       </div>
 
-
-  <!-- ABOUT DESCRIPTION -->
-    <section id="about">
+<!-- Sections Container (section content wrapper) -->
+  <div class="sections-container">
+ 
+  <!-- ABOUT -->
+    <section class="about" id="about">
       <div class="container">
-        <div class="row">
+        <!-- <div class="row"> -->
           <div class="col-lg-8 mx-auto">
             <h2>About</h2>
             <p class="lead">I'm Isaac Teuscher.</p>
             <p> I'm a senior at Head-Royce School in Oakland, CA.
                 I love rotisserie chicken, long beach runs, and even longer naps.
                 I have some CS proficency and am interested in front-end web development.
-                And last but not least, I'd love to connect with you below.
+                I'd love to connect with you below.
             </p>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="spacer spacer-medium"> &nbsp; </div>
@@ -152,29 +166,346 @@
 
 
   <!--Projects-->
-    <section id="projects" class="bg-light">
+    <section id="projects" class="projects bg-light">
       <div class="container">
-        <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Projects</h2>
             <p class="lead">Work I've done or am currently working on.</p>
+            <div class="spacer-small"></div>
           </div>
-        </div>
-      </div>
-      <div class="flush-div-in-section">
-        <div id="expanding-grid"> </div>
-        <!-- <script>
-            $(function(){
-                $("#expanding-grid").load("expanding-grid.html");
-            });
-        </script> -->
-        <!-- <embed class="expanding-grid-embed" type="text/html" src="expanding-grid.html"></embed> -->
-      </div>
+
+
+      <div id="theGrid" class="exp-grid-container">
+          <link rel="stylesheet" type="text/css" href="css/expanding-grid/normalize.css" /> 
+          <link rel="stylesheet" type="text/css" href="fonts/expanding-grid/font-awesome-4.3.0/css/font-awesome.min.css" />
+          <link rel="stylesheet" type="text/css" href="css/expanding-grid/style1.css" />
+         
+          <script src="js/expanding-grid/modernizr.custom.js"></script>
+         
+          <section class="grid">
+            <div class="top-bar">
+              <!-- <h2 class="top-bar__headline">Latest articles</h2> -->
+              <div class="filter">
+                <h3 class="filtertitle"> Filter by:</h3>
+                <div class="tags-container row"></div>
+              </div>
+            </div>
+
+          <!-- <div class="griditems-container"> -->
+            <div class="exp-grid-link grid__item item" data-item-id="1" data-item-tags="Web Design, Completed">
+              <h2 class="title title--preview">HRS Opportunities Hub Website</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/theoh.png" alt="thumb-theoh" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Fall-Winter 2016</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+            <div class="exp-grid-link grid__item item" data-item-id="2" data-item-tags="Web Design, Express & Node.js, WIP">
+              <h2 class="title title--preview">Lux: Community Polling Web Activity</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/lux.png" alt="thumb-lux" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Winter 2017</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+            <div class="exp-grid-link grid__item item" data-item-id="3" data-item-tags="Unity Game, Group Project, Completed">
+              <h2 class="title title--preview">Maze Explorer Game</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/mazeexplorer.png" alt="thumb-mazeexplorer" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Winter 2016</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+            <div class="exp-grid-link grid__item item" data-item-id="4" data-item-tags="iOS app, Group Project, WIP">
+              <h2 class="title title--preview">HRS Schedule &amp; Sign In/Out App</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/classy.png" alt="thumb-classy" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Winter 2018</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+            <div class="exp-grid-link grid__item item" data-item-id="5" data-item-tags="Java, Completed">
+              <h2 class="title title--preview">Java Steganography Encoding Program</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/steganography.png" alt="thumb-steganography" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Fall 2016</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+            <div class="exp-grid-link grid__item item" data-item-id="6" data-item-tags="Android App, Java, WIP">
+              <h2 class="title title--preview">On Pace: Android app for Track &amp; Field</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/onpace.png" alt="thumb-onpace" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Summer 2016</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+            <div class="exp-grid-link grid__item item" data-item-id="7" data-item-tags="Web Design, WIP">
+              <h2 class="title title--preview">My Personal Website</h2>
+              <div class="loader"></div>
+              <!-- <span class="category">Stories for humans</span> -->
+              <div class="meta meta--preview">
+                <img class="meta__avatar" src="images/thumbs/me.png" alt="thumb-me" />
+                <span class="meta__date">
+                  <i class="fa fa-calendar-o fa-lg"></i> Jan 2018</span>
+                <span class="meta__reading-time item-tags">
+                  <i class="fa fa-tags fa-lg"></i>
+                </span>
+              </div>
+            </div>
+
+           <!-- </div> griditems-container -->
+          </section>
+
+
+
+          <section class="content bg-light">
+            <div class="scroll-wrap">
+              <article class="content__item item" data-item-id="1" data-item-tags="Web Design, Completed">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">HRS Opportunities Hub Website</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/theoh.png" alt="thumb-theoh" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2016</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p> I worked with the Head-Royce School's Center for Community Engagement and IT department to design and create
+                  a website and filterable database for students to better access oppurtunities including summer travel programs,
+                  community service organizations, internships, etc.
+                </p>
+                <p> Currently the database has over 300 programs and has had nearly a thousand page views. </p>
+                <p> Visit the
+                  <a class="exp-grid-link" target="_blank" href="https://hrsinstitute.github.io/theOH/theoh.html">live website here</a>.
+                </p>
+              </article>
+              <article class="content__item item" data-item-id="2" data-item-tags="Web Design, Express & Node.js, WIP">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">Lux: Community Polling Web Activity</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/lux.png" alt="thumb-lux" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2017</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p>
+                </p>
+                <p> Lux is currently a work in progress. Not all of the features are working.</p>
+                <p> Visit the
+                  <a class="exp-grid-link" target="_blank" href="https://luxdemo.herokuapp.com/">demo website here</a>.
+                </p>
+              </article>
+              <article class="content__item item" data-item-id="3" data-item-tags="Unity Game, Group Project, Completed">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">Maze Explorer Game</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/mazeexplorer.png" alt="thumb-mazeexplorer" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2016</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p> Maze Explorer is a timed first person dungeon explorer game which generates a random maze each new round. It's
+                  complete with music and audio effects. Matthew Chan, Jonathan Wu, and I made it together using the Unity Game
+                  Engine.
+                </p>
+                <div class="w3-content w3-display-container">
+                  <!-- <img class="slides" src="project-file/MazeExplorer/ss1.png" style="width:640px;height:360px;"> -->
+                  <img class="slides meta__avatar" src="project-files/MazeExplorer/ss2.png">
+                  <img class="slides meta__avatar" src="project-files/MazeExplorer/ss3.png">
+                  <img class="slides meta__avatar" src="project-files/MazeExplorer/ss4.png">
+                  <a class="exp-grid-link w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+                  <a class="exp-grid-link w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
+                </div>
+                <p>Screenshots of the gameplay</p>
+                <br>
+                <object width="440" height="520" data="project-files/MazeExplorer/Maze-Explorer_User-Guide.pdf">
+                  Your browser does not support the User Guide PDF :( </object>
+                <p class="pcentered">Read the User Guide for Maze Explorer</p>
+                <br>
+                <a class="exp-grid-link" href="project-files/MazeExplorer/Maze-Explorer.zip"> Download Maze Explorer [ZIP] (only for Mac)</a>
+                <script>
+                  var slideIndex = 1;
+                  showDivs(slideIndex);
+
+                  function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                  }
+
+                  function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                  }
+                </script>
+              </article>
+              <article class="content__item item" data-item-id="4" data-item-tags="iOS app, Group Project, WIP">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">HRS Schedule &amp; Sign In/Out App</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/classy.png" alt="thumb-classy" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2018</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p> An iOS app originally built by Natalie Hartman which I have updated to a new working version. I've been working
+                  with Will Xenakis and Noah Teuscher to make this project work.
+                </p>
+                <p> Currently we are in talks with the Head-Royce School administration to get permission and licensing to host Classy
+                  on the App store.
+                </p>
+                <p> Check the
+                  <a class="exp-grid-link" target="_blank" href="">App Store</a> for the release soon!
+                </p>
+              </article>
+              <article class="content__item item" data-item-id="5" data-item-tags="Java, Completed">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">Java Steganography Encoding Program</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/steganography.png" alt="thumb-steganography" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Fall 2016</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p> Steganography is the practice of concealing a file, message, image, or video within another file, message, image,
+                  or video. Whereas cryptography is the practice of protecting the contents of a message alone, steganography
+                  is concerned with concealing the fact that a secret message is being sent as well as concealing the contents
+                  of the message.
+                </p>
+                <p> My program takes normal images (png, jpg, etc) and encodes a secret message in them. You can also use it to decode
+                  messages out of images that have been encoded by my program. The program is written in Java.
+                </p>
+                <a class="exp-grid-link" href="project-files/"> Download the Steganography Program [ZIP]</a>
+              </article>
+              <article class="content__item item" data-item-id="6" data-item-tags="Android App, Java, WIP">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">On Pace: Android app for Track &amp; Field</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/onpace.png" alt="thumb-onpace" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Summer 2016</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p>An Android app made for timing paces when running. Designed for real time measuring of track and field lap splits
+                  as you run.
+                </p>
+                <p> Will be available on the Google Play Store under "On Pace" once it is finished!</p>
+                <!-- <video width="288" height="512" controls>
+                         <source type="video/mp4" src="/project-files/OnPace/onpace_video.mp4">
+                         Your browser does not support this demo video :(
+                         </video>
+                         <p>Demo video of 'On Pace'</p> -->
+                <a class="exp-grid-link" href="/project-files/OnPace/onpace.zip"> Download the latest version [ZIP] </a>
+              </article>
+              <article class="content__item item" data-item-id="7" data-item-tags="Web Design, WIP">
+                <!-- <span class="category category--full">Stories for humans</span> -->
+                <h2 class="title title--full">My Personal Website</h2>
+                <div class="meta meta--full">
+                  <img class="meta__avatar" src="images/thumbs/me.png" alt="thumb-me" />
+                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <span class="meta__date">
+                    <i class="fa fa-calendar-o fa-lg"></i> Jan 2018</span>
+                  <span class="meta__reading-time item-tags">
+                    <i class="fa fa-tags fa-lg"></i>
+                  </span>
+                </div>
+                <p> </p>
+                <p> Version 2 of my personal portfolio website.
+                </p>
+                <p> Return to the
+                  <a class="exp-grid-link" href="index.html">homepage</a>.
+                </p>
+              </article>
+            </div> <!-- /scrollwrap -->
+
+            <button class="close-button">
+              <i class="fa fa-close fa-2x"></i>
+              <span>Close</span>
+            </button>
+          </section>
+        <!-- grid section -->
+           
+      </div> <!-- /exp-grid-container -->
+
+        <!-- expanding grid scripts -->
+        <script src="js/expanding-grid/classie.js"></script>
+        <script src="js/expanding-grid/main.js"></script>
+        <!-- tagsport sorting scripts -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="js/expanding-grid/tagsport.js"></script>
+        <script type="text/javascript">
+          $(function () {
+            $('div.tags-container').tagSort({ items: '.item', tagElement: 'span', tagClassPrefix: 'tagsort-', itemTagsView: '.item-tags', itemTagsSeperator: ' / ', sortType: 'exclusive', fadeTime: 0 });
+          });
+        </script>
+
+     <div class="spacer-medium"></div> 
+    </div> <!-- /container -->
+      
     </section>
 
 
-    <!--Projects-->
-      <section id="whatilove">
+
+    <!--Interests-->
+      <section id="interests" class="interests">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -182,14 +513,14 @@
               <p class="lead">What I love to do.</p>
 
                       <!-- heart animation -->
-                        <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 90 90" version="1.1">
+                        <!-- <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 90 90" version="1.1">
                           <g class="heart-loader__group">
                             <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
                             <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
                             <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
                             <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
                           </g>
-                        </svg>
+                        </svg> -->
 
 
             </div>
@@ -201,7 +532,7 @@
 
 
     <!--Resume-->
-      <section id="resume" class="bg-light">
+      <section id="resume" class="resume bg-light">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -210,10 +541,10 @@
       <p class="lead"> Click on a header to expand the section. <a href="/"> Download as PDF </a> </p>
 
               <h3 data-toggle="collapse" data-target="#contactinfo"> Personal Info </h3>
-                      <p id="contactinfo" class="major-indented collapse">
+                      <p id="contactinfo" class="indented collapse">
                         Isaac Teuscher   <br>
                         1416 Santa Clara Ave   <br>
-                        Alameda, CA, 94501   <br>
+                        <!-- Alameda, CA, 94501   <br> -->
                         <!-- Cell: (510) 206-8202   <br> -->
                         isaacteuscher@gmail.com
                       </p>
@@ -271,7 +602,7 @@
 
 
   <!--Contact-->
-    <section id="contact">
+    <section id="contact" class="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -303,6 +634,9 @@
         </div>
       </div>
     </section>
+
+    <!-- end of section container -->
+    </div>
 
 
 

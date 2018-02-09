@@ -1,65 +1,83 @@
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
 	margin: 0;
+}
+
+/* .sections-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+} */
+section {
+  padding: 150px 0;
+}
+
+section.about {
+  flex:1;
+}
+
+section.projects {
+  flex:2;
+}
+
+section.grid {
+  flex:3;
+}
+section.content {
+  flex:4;
+}
+
+section.interests {
+  flex:5;
+}
+section.resume {
+  flex:6;
+}
+section.contact {
+  flex:7;
 }
 
 header {
   padding: 154px 0 100px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   header {
     padding: 56px 0 10px;
   }
-}
-
-section {
-  padding: 150px 0;
 }
 
 .flush-div-in-section {
 	padding: -150px 0;
 }
 
-.expanding-grid-embed {
-	width:98vw;
-	min-height: 100ex;
-	max-height: 500ex;
-	margin-left: 1vw;
-	margin-right: 1vw;
-	height:100vh;
-}
-
-.navbar {
-	width:100%;
-	background-color:#DDDDDD;
-	color: #FFFFFF;
-	z-index:9;
-	display: none;
-	padding-top: 0.5ex;
-	padding-bottom: 0.5ex;
-}
-
 a{
   color: #343a40;
-	font-style: italic;
-	/* text-decoration: underline;
-	text-decoration-color: #343a40; */
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-color: #a4e7ad;
 }
 
-a:hover {
-		color: green;
-		text-decoration-color: green;
+a:hover{
+		color: #81c483;
+    text-decoration-color: #81c483;
+    transition: all 0.2s;
 }
 
 h1 {
-color:rgb(255, 255, 255);
-font-family: Hind, sans-serif;
-font-size:50px;
-font-weight:700;
-height:100px;
-line-height:50px;
-margin-bottom: 15px;
-text-size-adjust: 100%;
+    color:rgb(255, 255, 255);
+    font-family: Hind, sans-serif;
+    font-size:50px;
+    font-weight:700;
+    height:100px;
+    line-height:50px;
+    margin-bottom: 15px;
 }
 
 h3 {
@@ -77,31 +95,28 @@ h3 {
 }
 
 
-.navbar-icon{
-width: 60%;
-}
-
 .main-img {
-background:
-  /* linear-gradient(
-    rgba(0, 0, 0, 0.1),
-    rgba(0, 0, 0, 0.1)
-  ), */
-    url(../images/cloud_hi_photo.jpeg);
-background-size: cover;
-height: 100vh;
-margin: 0 auto;
-width: auto;
-display: block;
+  background:
+    /* linear-gradient(
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ), */
+      url(../images/cloud_hi_photo.jpeg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0 auto;
+  width: auto;
+  display: block;
 }
 
-.title {
-position: absolute;
-top: 35%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-text-align: center;
+.main-title {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .spacer-small {
@@ -119,20 +134,100 @@ article {
 }
 
 
+
+
+/* nav bar styling */
+.navbar {
+	width:100%;
+	z-index:9;
+	padding-top: 0.5ex;
+	padding-bottom: 0.5ex;
+}
+
+ /* .navbar-toggler {
+  max-width:10%;
+  max-height:10%;
+  padding:0;
+  border: none;
+}  */
+
+/* 
+.navbar-toggler:active{
+  background: darkgray;
+} */
+
+.navbar-icon{
+width: 60%;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* nav bar toggler animations 
+hamburger -> x */
+.navbar-toggle {
+  border: none;
+  padding-right: 0;
+  background: transparent !important;
+  align-items: center;
+}
+.navbar-toggle:hover {
+  background: transparent !important;
+}
+.navbar-toggle .icon-bar {
+  transition: all 0.2s;
+  background-color: inherit;
+  padding: 0;
+  display: block;
+  background: #fff;
+  width: 4.1em;
+  height: 0.2rem;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+}
+
+.navbar-toggle .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+.navbar-toggle .middle-bar {
+  opacity: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.navbar-toggle .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.navbar-toggle.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+
+
+
+
 /* -------------------------
 welcome box animation
 ------------------------- */
-/* welcome to lux animation box */
 
 .svg-wrapper {
   position: relative;
-  transform: translateY(-90%);
+  transform: translateY(-108%);
 	margin: 0 auto;
   /* padding-top: 154px; */
 }
 .shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -422;
+  stroke-dasharray: 100 1000;
+  stroke-dashoffset: -580;
   stroke-width: 6px;
   fill: transparent;
   stroke: white;
@@ -140,9 +235,11 @@ welcome box animation
   transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
 }
 .svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
+  stroke-width: 4px;
+  stroke-dasharray: 600 -10;
+    stroke-dashoffset: -150;
+  stroke-dasharray: 900 0;
+  /* stroke-dasharray: 1000; */
 }
 
 
@@ -152,156 +249,6 @@ welcome box animation
 /* -------------------------
 expanding divs
 ------------------------- */
-body {
-  margin: 0;
-}
-
-/* apply a natural box layout model to all elements, but allowing components to change */
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.image-grid {
-  width: 100%;
-  max-width: 1310px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 10px 5px 0;
-}
-
-.image__cell {
-  float: left;
-  position: relative;
-}
-
-.image--basic {
-  padding: 0 5px;
-}
-
-.basic__img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.image__cell.is-collapsed .image--basic {
-  cursor: pointer;
-}
-
-.image__cell.is-expanded .image--expand {
-  max-height: 500px;
-  margin-bottom: 10px;
-}
-
-.image--expand {
-  position: relative;
-  left: -5px;
-  padding: 0 5px;
-  box-sizing: content-box;
-  overflow: hidden;
-  background: #222;
-  max-height: 0;
-  transition: max-height .3s ease-in-out,margin-bottom .1s .2s;
-}
-
-.image__cell.is-collapsed .arrow--up {
-  height: 10px;
-  width: 100%;
-}
-
-.image__cell.is-expanded .arrow--up {
-  border-bottom: 8px solid #222;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  height: 0;
-  width: 0;
-  margin: 2px auto 0;
-}
-
-.expand__close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: #454545;
-  font-size: 50px;
-  line-height: 50px;
-  text-decoration: none;
-}
-
-.expand__close:before {
-  content: '×';
-}
-
-.expand__close:hover {
-  color: #fff;
-}
-
-.image--large {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  padding: 40px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-@media only screen and (max-width: 530px) {
-
-  .image__cell {
-      width: 50%;
-  }
-
-  .image__cell:nth-of-type(2n+2) .image--expand {
-      margin-left: -100%;
-  }
-
-  .image__cell:nth-of-type(2n+3) {
-      clear:left;
-  }
-
-  .image--expand {
-      width: 200%;
-  }
-
-}
-
-@media only screen and (min-width: 531px) {
-  .image__cell {
-      width: 20%;
-  }
-
-  .image__cell:nth-of-type(5n+2) .image--expand {
-    margin-left: -100%;
-  }
-
-  .image__cell:nth-of-type(5n+3) .image--expand {
-    margin-left: -200%;
-  }
-
-  .image__cell:nth-of-type(5n+4) .image--expand {
-    margin-left: -300%;
-  }
-
-  .image__cell:nth-of-type(5n+5) .image--expand {
-    margin-left: -400%;
-  }
-
-  .image__cell:nth-of-type(5n+6) {
-    clear: left;
-  }
-
-  .image--expand {
-    width: 500%;
-  }
-
-}
-
 
 
 /* -------------------------
@@ -480,7 +427,7 @@ social media buttons
     width:  6ex;
     height: 6ex;
     fill: currentColor;
-    transition: .2s;
+    transition: 0s;
 }
 
 .c-link--facebook:hover  { color: #3b5998 }
@@ -512,7 +459,7 @@ social media buttons
     left: 50%;
     transform: translate(-50%, -30px);
     opacity: 0;
-    transition: .2s;
+    transition: 0.25s;
 }
 
 .c-tooltip::before {
@@ -536,8 +483,6 @@ social media buttons
     opacity: 1;
     transform: translate(-50%);
 }
-
-
 
 
 

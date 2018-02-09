@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top - 20)
         }, 900, "easeInOutExpo");
         return false;
       }
@@ -17,13 +17,18 @@
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
+    
     $('.navbar-collapse').collapse('hide');
+
+    //change the hamburger menu 
+    // $('.navbar-toggler').toggleClass.remove('collapsed');
+
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
-    target: '#mainNav',
-    offset: 54
+    target: '#menu',
+    offset: 170
   });
 
 })(jQuery); // End of use strict
