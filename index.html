@@ -14,11 +14,28 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
     <!-- CSS stylesheet -->
     <link href="css/mainstyle.css" rel="stylesheet">
 
     <!-- load up jquery locally instead of from online link -->
     <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!--load up all font awesome icons-->
+    <script src="fonts/fontawesome-all.js"></script>
+
+    <!--Photo Swipe -->
+      <link rel='stylesheet prefetch' href='other/photoswipe/css/photoswipe.min.css'>
+      <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
+      <link rel="stylesheet" href="other/photoswipe/css/photoswipe.css">
+
+    <!-- Slippry image slideshow -->
+    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="other/slippry/dist/slippry.min.js"></script>
+    <link rel="stylesheet" href="other/slippry/dist/slippry.css">
+    <link rel="stylesheet" href="other/slippry/demo/demo.css"> -->
+
 
   </head>
 
@@ -99,7 +116,6 @@
             <p> I'm a senior at Head-Royce School in Oakland, CA.
                 I love rotisserie chicken, long beach runs, and even longer naps.
                 I have some CS proficency and am interested in front-end web development.
-                I'd love to connect with you below.
             </p>
           </div>
         <!-- </div> -->
@@ -177,7 +193,6 @@
 
       <div id="theGrid" class="exp-grid-container">
           <link rel="stylesheet" type="text/css" href="css/expanding-grid/normalize.css" /> 
-          <link rel="stylesheet" type="text/css" href="fonts/expanding-grid/font-awesome-4.3.0/css/font-awesome.min.css" />
           <link rel="stylesheet" type="text/css" href="css/expanding-grid/style1.css" />
          
           <script src="js/expanding-grid/modernizr.custom.js"></script>
@@ -186,100 +201,99 @@
             <div class="top-bar">
               <!-- <h2 class="top-bar__headline">Latest articles</h2> -->
               <div class="filter">
-                <h3 class="filtertitle"> Filter by:</h3>
+                <p class="lead filtertitle">Filter by:</p>
                 <div class="tags-container row"></div>
               </div>
             </div>
 
           <!-- <div class="griditems-container"> -->
-            <div class="exp-grid-link grid__item item" data-item-id="1" data-item-tags="Web Design, Completed">
+            <div class="exp-grid-link grid__item item" data-item-id="1" data-item-tags="Web Design">
               <h2 class="title title--preview">HRS Opportunities Hub Website</h2>
               <div class="loader"></div>
               <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/theoh.png" alt="thumb-theoh" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Fall-Winter 2016</span>
+                  <i class="fa fa-calendar fa-lg"></i> Sept 2016 - March 2017 </span>
                 <span class="meta__reading-time item-tags">
                   <i class="fa fa-tags fa-lg"></i>
                 </span>
               </div>
             </div>
-            <div class="exp-grid-link grid__item item" data-item-id="2" data-item-tags="Web Design, Express & Node.js, WIP">
+            <div class="exp-grid-link grid__item item" data-item-id="2" data-item-tags="Web Design, Express & Node.js">
               <h2 class="title title--preview">Lux: Community Polling Web Activity</h2>
               <div class="loader"></div>
               <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/lux.png" alt="thumb-lux" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Winter 2017</span>
+                  <i class="fas fa-calendar fa-lg"></i> Dec 2017</span>
                 <span class="meta__reading-time item-tags">
-                  <i class="fa fa-tags fa-lg"></i>
+                  <i class="fas fa-tags fa-lg"></i>
                 </span>
               </div>
             </div>
-            <div class="exp-grid-link grid__item item" data-item-id="3" data-item-tags="Unity Game, Group Project, Completed">
+            <div class="exp-grid-link grid__item item" data-item-id="3" data-item-tags="Unity Game, Group Project">
               <h2 class="title title--preview">Maze Explorer Game</h2>
               <div class="loader"></div>
               <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/mazeexplorer.png" alt="thumb-mazeexplorer" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Winter 2016</span>
+                  <i class="fas fa-calendar fa-lg"></i> Dec 2016 </span>
                 <span class="meta__reading-time item-tags">
-                  <i class="fa fa-tags fa-lg"></i>
+                  <i class="fas fa-tags fa-lg"></i>
                 </span>
               </div>
             </div>
-            <div class="exp-grid-link grid__item item" data-item-id="4" data-item-tags="iOS app, Group Project, WIP">
+            <div class="exp-grid-link grid__item item" data-item-id="4" data-item-tags="iOS app, Group Project">
               <h2 class="title title--preview">HRS Schedule &amp; Sign In/Out App</h2>
               <div class="loader"></div>
               <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/classy.png" alt="thumb-classy" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Winter 2018</span>
+                  <i class="fas fa-calendar fa-lg"></i> Jan 2018</span>
                 <span class="meta__reading-time item-tags">
-                  <i class="fa fa-tags fa-lg"></i>
+                  <i class="fas fa-tags fa-lg"></i>
                 </span>
               </div>
             </div>
-            <div class="exp-grid-link grid__item item" data-item-id="5" data-item-tags="Java, Completed">
+            <div class="exp-grid-link grid__item item" data-item-id="5" data-item-tags="Java">
               <h2 class="title title--preview">Java Steganography Encoding Program</h2>
               <div class="loader"></div>
               <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/steganography.png" alt="thumb-steganography" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Fall 2016</span>
+                  <i class="fas fa-calendar fa-lg"></i> Fall 2016</span>
                 <span class="meta__reading-time item-tags">
-                  <i class="fa fa-tags fa-lg"></i>
+                  <i class="fas fa-tags fa-lg"></i>
                 </span>
               </div>
             </div>
-            <div class="exp-grid-link grid__item item" data-item-id="6" data-item-tags="Android App, Java, WIP">
+            <!-- <div class="exp-grid-link grid__item item" data-item-id="6" data-item-tags="Android App, Java, WIP">
               <h2 class="title title--preview">On Pace: Android app for Track &amp; Field</h2>
               <div class="loader"></div>
-              <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/onpace.png" alt="thumb-onpace" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Summer 2016</span>
+                  <i class="fas fa-calendar fa-lg"></i> Summer 2016</span>
                 <span class="meta__reading-time item-tags">
-                  <i class="fa fa-tags fa-lg"></i>
+                  <i class="fas fa-tags fa-lg"></i>
                 </span>
               </div>
-            </div>
-            <div class="exp-grid-link grid__item item" data-item-id="7" data-item-tags="Web Design, WIP">
+            </div> -->
+            <div class="exp-grid-link grid__item item" data-item-id="7" data-item-tags="Web Design">
               <h2 class="title title--preview">My Personal Website</h2>
               <div class="loader"></div>
               <!-- <span class="category">Stories for humans</span> -->
               <div class="meta meta--preview">
                 <img class="meta__avatar" src="images/thumbs/me.png" alt="thumb-me" />
                 <span class="meta__date">
-                  <i class="fa fa-calendar-o fa-lg"></i> Jan 2018</span>
+                  <i class="fas fa-calendar fa-lg"></i> Jan 2018</span>
                 <span class="meta__reading-time item-tags">
-                  <i class="fa fa-tags fa-lg"></i>
+                  <i class="fas fa-tags fa-lg"></i>
                 </span>
               </div>
             </div>
@@ -291,91 +305,169 @@
 
           <section class="content bg-light">
             <div class="scroll-wrap">
-              <article class="content__item item" data-item-id="1" data-item-tags="Web Design, Completed">
+
+              <article class="content__item item" data-item-id="1" data-item-tags="Web Design">
                 <!-- <span class="category category--full">Stories for humans</span> -->
                 <h2 class="title title--full">HRS Opportunities Hub Website</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/theoh.png" alt="thumb-theoh" />
                   <!-- <span class="meta__author">Isaac Teuscher</span> -->
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2016</span>
+                    <i class="fas fa-calendar fa-lg"></i> Sept 2016 - March 2017 </span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
+
                 <p> </p>
-                <p> I worked with the Head-Royce School's Center for Community Engagement and IT department to design and create
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> What is the Opportunities Hub? </h3>
+                <p> I worked with Head-Royce School's Center for Community Engagement and IT department to design and create
                   a website and filterable database for students to better access oppurtunities including summer travel programs,
-                  community service organizations, internships, etc.
+                  community service organizations, internships, etc. Branded as 'The OH!', the site has undergone many design iterations 
+                  over nearly a year as I've worked with Ms. Nancy Feidelman to make it best fit the needs of the Head-Royce community.
                 </p>
-                <p> Currently the database has over 300 programs and has had nearly a thousand page views. </p>
-                <p> Visit the
-                  <a class="exp-grid-link" target="_blank" href="https://hrsinstitute.github.io/theOH/theoh.html">live website here</a>.
+
+                <div class="spacer-very-small"> &nbsp; </div>
+
+                <img class="avg-image" src="images/theoh-screenshot.png" alt="The OH! screenshot">
+                <div class="caption">Screenshot from The OH!</div>
+
+                <div class="spacer-medium"> &nbsp; </div>
+
+                <h3> Design </h3>
+                <p> The OH! is a simple webpage running a custom 
+                  <a target="_blank" href="https://sites.google.com/site/scriptsexamples/available-web-apps/awesome-tables">Awesome Table</a>
+                  (a plugin which helps turns Google spreadsheet data into filterable, dynamic elements). 
+                  My goal when building the site was that the administrators and faculty adding new programs would
+                  never have to see a line of code if they didn't want to. As such the data input, organization and display
+                  process is integrated with G-Suite (Google forms, spreadsheets, Awesome Table, etc) but has HTML, CSS, and JavaScript 
+                  behind the scenes. </p>
+
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> Current Use </h3>
+                <p> The database has nearly 350 programs and has had over a thousand page views. It is used by students, teachers, and parents
+                  throughout the Head-Royce School community. </p>
+
+                <div class="spacer-very-small"> &nbsp; </div>
+
+                <p class="lead"> Visit the
+                  <a target="_blank" href="https://hrsinstitute.github.io/theOH/theoh.html">Live Website.</a>
                 </p>
               </article>
-              <article class="content__item item" data-item-id="2" data-item-tags="Web Design, Express & Node.js, WIP">
+
+              <article class="content__item item" data-item-id="2" data-item-tags="Web Design, Express & Node.js">
                 <!-- <span class="category category--full">Stories for humans</span> -->
                 <h2 class="title title--full">Lux: Community Polling Web Activity</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/lux.png" alt="thumb-lux" />
+                  <div class="spacer-small"> &nbsp; </div>
                   <!-- <span class="meta__author">Isaac Teuscher</span> -->
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2017</span>
+                    <i class="fas fa-calendar fa-lg"></i> Dec 2017 </span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
+
                 <p> </p>
+                <div class="spacer-small"> &nbsp; </div>
+
+                <h3> What is Lux? </h3>
                 <p>
+                  Lux is a web-based activity to help a community become more aware of its silent identites. 
+                  The website and server is built with Express and Node.JS (Express server, Pug on the frontend, Knex and a MySQL DB on the backend). 
                 </p>
-                <p> Lux is currently a work in progress. Not all of the features are working.</p>
-                <p> Visit the
-                  <a class="exp-grid-link" target="_blank" href="https://luxdemo.herokuapp.com/">demo website here</a>.
+
+                   <div class="spacer-small"> &nbsp; </div>
+                
+                  <h3> How does it work? </h3>
+                  <p> A Lux is created with questions like: ‘Have you been bullied at school?’ or ‘Have you been sexually harassed by someone
+                    from our community?’ A link to the Lux is shared out to the members who each privatly answer the questions. All answers
+                    are stored anonymously. Then at an assembly or meeting, each member heads to the shared link and is anonymously given
+                    the answers of someone else. The questions are read aloud and people stand up when their given answer is yes. Although
+                    numbers and graphs can make the same points, this exercise is especially powerful because you see your peers standing
+                    and know that they are giving voice to the identity of someone else in the room.
+                  </p>
+                
+                  <div class="spacer-small"> &nbsp; </div>
+                
+                  <h3> Inspiration for Lux </h3>
+                  <p> The idea and structure of Lux is based off similar activites led by affinity groups at Head-Royce School in Oakland, CA.
+                    The inspiration to create a website to run Lux activities came from the #MeToo movement and the national interest in
+                    understanding the pevelence of issues like sexual harrasment that are too often ignored.
+                  </p>
+                
+                  <div class="spacer-small"> &nbsp; </div>
+                
+                  <h3> Project Resources </h3>
+                  <p> 
+                    You can see the Github repository for Lux <a href="https://github.com/iteuscher/lux" target="__blank">here</a>.
+                    For the User Guide to help with installation and setup, click <a target="_blank" href="project-files/pdfs/Lux User Guide.pdf">here</a>. 
+                  </p>
+
+                  <div class="spacer-small"> &nbsp; </div>
+
+                <p class="note"> ** Lux is currently a work in progress. Not all of the features are working. **</p>
+
+                <div class="spacer-very-small"> &nbsp; </div>
+
+                <p class="lead"> Visit the
+                  <a target="_blank" href="https://luxdemo.herokuapp.com/">Live Demo Website.</a>
                 </p>
+
               </article>
-              <article class="content__item item" data-item-id="3" data-item-tags="Unity Game, Group Project, Completed">
+
+              <article class="content__item item" data-item-id="3" data-item-tags="Unity Game, Group Project">
                 <!-- <span class="category category--full">Stories for humans</span> -->
                 <h2 class="title title--full">Maze Explorer Game</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/mazeexplorer.png" alt="thumb-mazeexplorer" />
                   <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <div class="spacer-small"> &nbsp; </div>
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2016</span>
+                    <i class="fas fa-calendar fa-lg"></i> Dec 2016</span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
+
                 <p> </p>
-                <p> Maze Explorer is a timed first person dungeon explorer game which generates a random maze each new round. It's
-                  complete with music and audio effects. Matthew Chan, Jonathan Wu, and I made it together using the Unity Game
-                  Engine.
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> What is Maze Explorer? </h3>
+                <p> Maze Explorer is a 1st person dungeon explorer game which generates a random maze each new round. 
+                  It's complete with music and audio effects. You must explore the maze and collect all the orbs
+                  before your oxygen runs out to win. You also have to watch out for traps on the floor which either 
+                  slow you down or temporarily blind you. 
+                </p><p>
+                  Matthew Chan, Jonathan Wu, and I made the game together using the 
+                  <a href="https://unity3d.com" target="__blank">Unity Game Engine</a>.
                 </p>
-                <div class="w3-content w3-display-container">
-                  <!-- <img class="slides" src="project-file/MazeExplorer/ss1.png" style="width:640px;height:360px;"> -->
-                  <img class="slides meta__avatar" src="project-files/MazeExplorer/ss2.png">
-                  <img class="slides meta__avatar" src="project-files/MazeExplorer/ss3.png">
-                  <img class="slides meta__avatar" src="project-files/MazeExplorer/ss4.png">
-                  <a class="exp-grid-link w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
-                  <a class="exp-grid-link w3-btn-floating w3-display-right" onclick="plusDivs(+1)">&#10095;</a>
-                </div>
-                <p>Screenshots of the gameplay</p>
-                <br>
-                <object width="440" height="520" data="project-files/MazeExplorer/Maze-Explorer_User-Guide.pdf">
-                  Your browser does not support the User Guide PDF :( </object>
-                <p class="pcentered">Read the User Guide for Maze Explorer</p>
-                <br>
-                <a class="exp-grid-link" href="project-files/MazeExplorer/Maze-Explorer.zip"> Download Maze Explorer [ZIP] (only for Mac)</a>
+                
+                <div class="spacer-small"> &nbsp; </div>
+
+                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss2.png">
+                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss3.png">
+                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss4.png">
+                <div class="caption">Screenshots from the app</div>
+                <a onclick="plusDivs(-1)">
+                  <i class="far fa-2x fa-arrow-alt-circle-left"></i>
+                </a>
+                <a onclick="plusDivs(+1)">
+                  <i class="far fa-2x fa-arrow-alt-circle-right"></i>
+                </a>
                 <script>
                   var slideIndex = 1;
                   showDivs(slideIndex);
-
                   function plusDivs(n) {
                     showDivs(slideIndex += n);
                   }
-
                   function showDivs(n) {
                     var i;
-                    var x = document.getElementsByClassName("slides");
+                    var x = document.getElementsByClassName("slides1");
                     if (n > x.length) { slideIndex = 1 }
                     if (n < 1) { slideIndex = x.length }
                     for (i = 0; i < x.length; i++) {
@@ -384,63 +476,186 @@
                     x[slideIndex - 1].style.display = "block";
                   }
                 </script>
+
+                
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <!-- <h3> Project Resources </h3> -->
+                <p>
+                   You can read the User Guide to help with installation and setup
+                  <a target="_blank" href="project-files/MazeExplorer/Maze-Explorer_User-Guide.pdf">here</a>.
+                </p>
+                
+                <div class="spacer-very-small"> &nbsp; </div>
+                
+                <p class="note"> ** Maze Explorer is only available for OSX (Mac's). **</p>
+                
+                <div class="spacer-very-small"> &nbsp; </div>
+                
+                <p class="lead"> Download
+                  <a href="project-files/MazeExplorer/Maze-Explorer.zip">Maze Explorer</a> [ZIP]
+                </p>
+                
               </article>
-              <article class="content__item item" data-item-id="4" data-item-tags="iOS app, Group Project, WIP">
+
+              <article class="content__item item" data-item-id="4" data-item-tags="iOS app, Group Project">
                 <!-- <span class="category category--full">Stories for humans</span> -->
                 <h2 class="title title--full">HRS Schedule &amp; Sign In/Out App</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/classy.png" alt="thumb-classy" />
                   <!-- <span class="meta__author">Isaac Teuscher</span> -->
+                  <div class="spacer-small"> &nbsp; </div>
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Winter 2018</span>
+                    <i class="fas fa-calendar fa-lg"></i> Jan 2018</span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
+
                 <p> </p>
-                <p> An iOS app originally built by Natalie Hartman which I have updated to a new working version. I've been working
-                  with Will Xenakis and Noah Teuscher to make this project work.
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> What is the Head-Royce Schedule App? </h3>
+                <p> A few years ago, Natalie Hartman created the iOS app 'HRS Classy' which let students at 
+                  Head-Royce see exactly how long they had left in class and how long until their next class started. 
+                  Because of the confusing rotating block schedule, the app was greatly appreciated by students.
+                  However, when Natalie graduated and her developer license expired, 'HRS Classy' disappeared from the app store. 
+                  I reached out to Natalie for her code and have been working with Will Xenakis and my brother Noah Teuscher
+                  to make a fresh version of the app so students can once know when they need to be in (or out) of class.
                 </p>
-                <p> Currently we are in talks with the Head-Royce School administration to get permission and licensing to host Classy
-                  on the App store.
+
+
+                <!-- <img class="slides2 avg-image" src="project-files/MazeExplorer/ss2.png">
+                <img class="slides2 avg-image" src="project-files/MazeExplorer/ss3.png">
+                <img class="slides2 avg-image" src="project-files/MazeExplorer/ss4.png">
+               <div class="caption">Screenshots from the app</div>
+                <a onclick="plusDivs(-1)">
+                  <i class="far fa-2x fa-arrow-alt-circle-left"></i>
+                </a>
+                <a onclick="plusDivs(+1)">
+                  <i class="far fa-2x fa-arrow-alt-circle-right"></i>
+                </a>
+                    <script>
+                      var slideIndex = 1;
+                      showDivs(slideIndex);
+                      function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                      }
+                      function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("slides2");
+                        if (n > x.length) { slideIndex = 1 }
+                        if (n < 1) { slideIndex = x.length }
+                        for (i = 0; i < x.length; i++) {
+                          x[i].style.display = "none";
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                      }
+                    </script> -->
+                
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> Current Status </h3>
+                <p>
+                  We are in talks with the Head-Royce School administration to get permission 
+                  and licensing to host the app on the app store. Our goal is that the app will stay availible 
+                  and beloved long after we graduate from Head-Royce.
                 </p>
-                <p> Check the
-                  <a class="exp-grid-link" target="_blank" href="">App Store</a> for the release soon!
-                </p>
+                
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <p class="note"> ** Though this app is only made for iOS devices, another student is making an Android version. **</p>
+                
+                <div class="spacer-very-small"> &nbsp; </div>
+                
+                <p class="lead"> Check the iOS
+                  <a target="__blank" href="https://www.apple.com/ios/app-store/">App Store</a> for it's upcoming release.
+                </p>   
+
               </article>
-              <article class="content__item item" data-item-id="5" data-item-tags="Java, Completed">
+
+              <article class="content__item item" data-item-id="5" data-item-tags="Java">
                 <!-- <span class="category category--full">Stories for humans</span> -->
                 <h2 class="title title--full">Java Steganography Encoding Program</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/steganography.png" alt="thumb-steganography" />
                   <!-- <span class="meta__author">Isaac Teuscher</span> -->
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Fall 2016</span>
+                    <i class="fas fa-calendar fa-lg"></i> Fall 2016</span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
+
                 <p> </p>
-                <p> Steganography is the practice of concealing a file, message, image, or video within another file, message, image,
-                  or video. Whereas cryptography is the practice of protecting the contents of a message alone, steganography
-                  is concerned with concealing the fact that a secret message is being sent as well as concealing the contents
-                  of the message.
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> What is Steganography? </h3>
+                <p> Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video.
+                Whereas cryptography is the practice of protecting the contents of a message alone, steganography is concerned with concealing
+                the fact that a secret message is being sent as well as concealing the contents of the message. 
+                <br> - Wikipedia
                 </p>
-                <p> My program takes normal images (png, jpg, etc) and encodes a secret message in them. You can also use it to decode
-                  messages out of images that have been encoded by my program. The program is written in Java.
+
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <h3> How does my program work? </h3>
+                <p> 
+                   My program takes normal images (png, jpg, etc) and encodes a secret message in them. You can also use it to decode messages
+                  out of images that have been encoded by my program. The program is written in Java.
                 </p>
-                <a class="exp-grid-link" href="project-files/"> Download the Steganography Program [ZIP]</a>
+                
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <img class="slides3 avg-image" src="project-files/Steg/hidden_data-01.png">
+                <!-- <img class="slides3 avg-image" src="project-files/MazeExplorer/ss3.png">
+                <img class="slides3 avg-image" src="project-files/MazeExplorer/ss4.png"> -->
+                <div class="spacer-small"> &nbsp; </div>
+                <!-- <div class="caption">Screenshots of the program</div> -->
+                <!-- <a onclick="plusDivs(-1)">
+                  <i class="far fa-2x fa-arrow-alt-circle-left"></i>
+                </a>
+                <a onclick="plusDivs(+1)">
+                  <i class="far fa-2x fa-arrow-alt-circle-right"></i>
+                </a> -->
+                <script>
+                  var slideIndex = 1;
+                  showDivs(slideIndex);
+                  function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                  }
+                  function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("slides3");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                  }
+                </script>
+                
+                <div class="spacer-small"> &nbsp; </div>
+                             
+                <p class="note"> ** You will need an <a target="__blank" href="https://java.com/en/download/">updated JRE</a> to run the program **</p>
+                
+                <div class="spacer-very-small"> &nbsp; </div>
+                
+                <p class="lead"> Download the
+                  <a href="project-files/">Steganography Program</a> [ZIP]
+                </p>
+              
               </article>
-              <article class="content__item item" data-item-id="6" data-item-tags="Android App, Java, WIP">
-                <!-- <span class="category category--full">Stories for humans</span> -->
+
+              <!-- <article class="content__item item" data-item-id="6" data-item-tags="Android App, Java, WIP">
                 <h2 class="title title--full">On Pace: Android app for Track &amp; Field</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/onpace.png" alt="thumb-onpace" />
-                  <!-- <span class="meta__author">Isaac Teuscher</span> -->
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Summer 2016</span>
+                    <i class="fas fa-calendar fa-lg"></i> Summer 2016</span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
                 <p> </p>
@@ -448,36 +663,49 @@
                   as you run.
                 </p>
                 <p> Will be available on the Google Play Store under "On Pace" once it is finished!</p>
-                <!-- <video width="288" height="512" controls>
+                <video width="288" height="512" controls>
                          <source type="video/mp4" src="/project-files/OnPace/onpace_video.mp4">
                          Your browser does not support this demo video :(
                          </video>
-                         <p>Demo video of 'On Pace'</p> -->
+                         <p>Demo video of 'On Pace'</p>
                 <a class="exp-grid-link" href="/project-files/OnPace/onpace.zip"> Download the latest version [ZIP] </a>
-              </article>
-              <article class="content__item item" data-item-id="7" data-item-tags="Web Design, WIP">
+              </article> -->
+
+              <article class="content__item item" data-item-id="7" data-item-tags="Web Design">
                 <!-- <span class="category category--full">Stories for humans</span> -->
                 <h2 class="title title--full">My Personal Website</h2>
                 <div class="meta meta--full">
                   <img class="meta__avatar" src="images/thumbs/me.png" alt="thumb-me" />
                   <!-- <span class="meta__author">Isaac Teuscher</span> -->
                   <span class="meta__date">
-                    <i class="fa fa-calendar-o fa-lg"></i> Jan 2018</span>
+                    <i class="fas fa-calendar fa-lg"></i> Jan 2018 </span>
                   <span class="meta__reading-time item-tags">
-                    <i class="fa fa-tags fa-lg"></i>
+                    <i class="fas fa-tags fa-lg"></i>
                   </span>
                 </div>
                 <p> </p>
-                <p> Version 2 of my personal portfolio website.
+                <div class="spacer-small"> &nbsp; </div>
+                
+                <p> Version 2 of my personal portfolio website. 
+                  Built using Bootstrap, JQuery, a few plugins, and a lot of HTML and CSS.
                 </p>
+
+                <div class="spacer-small"> &nbsp; </div>
+
+                <p> You can see all the code for this site in my <a target="__blank" href="https://github.com/iteuscher/me" >Github repository</a>.
+                </p>
+
+                <div class="spacer-small"> &nbsp; </div>
+
                 <p> Return to the
-                  <a class="exp-grid-link" href="index.html">homepage</a>.
+                  <a href="index.html">homepage</a>.
                 </p>
               </article>
+
             </div> <!-- /scrollwrap -->
 
             <button class="close-button">
-              <i class="fa fa-close fa-2x"></i>
+              <i class="fas fa-times fa-2x"></i>
               <span>Close</span>
             </button>
           </section>
@@ -493,7 +721,8 @@
         <script src="js/expanding-grid/tagsport.js"></script>
         <script type="text/javascript">
           $(function () {
-            $('div.tags-container').tagSort({ items: '.item', tagElement: 'span', tagClassPrefix: 'tagsort-', itemTagsView: '.item-tags', itemTagsSeperator: ' / ', sortType: 'exclusive', fadeTime: 0 });
+            $('div.tags-container').tagSort({ items: '.item', tagElement: 'span', tagClassPrefix: 'tagsort-', itemTagsView: '.item-tags', itemTagsSeperator: ' / ', sortType: 'exclusive', 
+            fadeTime: 0 });
           });
         </script>
 
@@ -504,54 +733,165 @@
 
 
 
-    <!--Interests-->
-      <section id="interests" class="interests">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2>Interests</h2>
-              <p class="lead">What I love to do.</p>
-
-                      <!-- heart animation -->
-                        <!-- <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 90 90" version="1.1">
-                          <g class="heart-loader__group">
-                            <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
-                            <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
-                            <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
-                            <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
-                          </g>
-                        </svg> -->
+  <!--Interests-->
+    <section id="interests" class="interests">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Interests</h2>
+            <p class="lead">What I <i class="far fa-heart"></i> to do.</p>
 
 
+        <!-- PHOTO SWIPE -->
+            <h4>My gallery</h4>
+            
+            <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+            
+            
+            
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
+                  <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption 2.1</figcaption>
+              </figure>
+            
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
+                  <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption 2.2</figcaption>
+              </figure>
+            
+              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
+                  <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
+                </a>
+                <figcaption itemprop="caption description">Image caption 2.3</figcaption>
+              </figure>
+            
+            
             </div>
+            
+            
+            
+            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            
+              <!-- Background of PhotoSwipe. 
+                     It's a separate element, as animating opacity is faster than rgba(). -->
+              <div class="pswp__bg"></div>
+            
+              <!-- Slides wrapper with overflow:hidden. -->
+              <div class="pswp__scroll-wrap">
+            
+                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                </div>
+            
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+            
+                  <div class="pswp__top-bar">
+            
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+            
+                    <div class="pswp__counter"></div>
+            
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+            
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            
+                    <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                      <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                          <div class="pswp__preloader__donut"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                  </div>
+            
+                  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                  </button>
+            
+                  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                  </button>
+            
+                  <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+            <script src="other/photoswipe/photoswipe.js"></script>
+
+
+
+                    <!-- heart animation -->
+                      <!-- <svg class="heart-loader" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewbox="0 0 90 90" version="1.1">
+                        <g class="heart-loader__group">
+                          <path class="heart-loader__square" stroke-width="1" fill="none" d="M0,30 0,90 60,90 60,30z"/>
+                          <path class="heart-loader__circle m--left" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+                          <path class="heart-loader__circle m--right" stroke-width="1" fill="none" d="M60,60 a30,30 0 0,1 -60,0 a30,30 0 0,1 60,0"/>
+                          <path class="heart-loader__heartPath" stroke-width="2" d="M60,30 a30,30 0 0,1 0,60 L0,90 0,30 a30,30 0 0,1 60,0" />
+                        </g>
+                      </svg> -->
+
+
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
 
 
-    <!--Resume-->
+  <!--Resume-->
       <section id="resume" class="resume bg-light">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
 
           <h2>Resume</h2>
-      <p class="lead"> Click on a header to expand the section. <a href="/"> Download as PDF </a> </p>
+      <p class="lead"> 
+        Click on a header to expand the section. 
+        <!-- <br> -->
+        <a href="other/error.html"> Download as PDF
+          <!-- <i style="padding-left: 5px;" class="far fa-lg fa-file-alt"></i>-->
+        </a>
+      </p>
 
-              <h3 data-toggle="collapse" data-target="#contactinfo"> Personal Info </h3>
+              <h3 data-toggle="collapse" data-target="#contactinfo"><i class="fas fa-address-card">&nbsp;</i> Personal Info </h3>
                       <p id="contactinfo" class="indented collapse">
                         Isaac Teuscher   <br>
-                        1416 Santa Clara Ave   <br>
-                        <!-- Alameda, CA, 94501   <br> -->
+                        <!-- 1416 Santa Clara Ave   <br> -->
+                        Alameda, CA, 94501   <br>
                         <!-- Cell: (510) 206-8202   <br> -->
                         isaacteuscher@gmail.com
                       </p>
                   <div class="spacer-small"> </div>
 
-             <h3 data-toggle="collapse" data-target="#education"> Education </h3>
-                    <p id="education" class="indented collapse">
+             <h3 data-toggle="collapse" data-target="#education"><i class="fas fa-graduation-cap">&nbsp;</i> Education </h3>
+                <p id="education" class="indented collapse">
                         Head-Royce High School   <br>
                         3.87 GPA   <br>
                         ASB Treasurer
@@ -559,39 +899,48 @@
                 <div class="spacer-small"> </div>
 
 
-             <h3 data-toggle="collapse" data-target="#workexperience"> Work Experience </h3>
+             <h3 data-toggle="collapse" data-target="#workexperience"><i class="fas fa-cogs">&nbsp;</i> Work Experience </h3>
                     <p id="workexperience" class="indented collapse">
-                        Company #1   <br>
-                        City, State   <br>
-                        Dates Worked   <br>
-                        Job Title   <br>
-                        - Responsibilities / Achievements
-                        - Responsibilities / Achievements
+                        <u>General Contractor assistant</u>  <br>
+                        Alameda, CA   <br>
+                        July - Aug 2017  <br>
+                        Mixed concrete, installed lawns, poured driveways, 
+                        painting, installed AC, electrical work, etc.
 
                         <br>
                         <br>
 
-                        Company #2   <br>
-                        City, State   <br>
-                        Dates Worked   <br>
-                        Job Title   <br>
-                        - Responsibilities / Achievements
-                        - Responsibilities / Achievements
+                        <u>Student Web Developer</u> <br>
+                        Head-Royce School <br>
+                        Oakland, CA  <br>
+                        Sept 2016 - Jan 2018  <br>
+                        Built the Oppurtunities Hub website and database for the 
+                        HRS Center for Community Engagement. 
+                        Since the launch I've helped update the design and 
+                        troubleshoot issues (tinyurl.com/theoh).
                     </p>
                 <div class="spacer-small"> </div>
 
-              <h3 data-toggle="collapse" data-target="#activities"> Activities </h3>
+              <h3 data-toggle="collapse" data-target="#activities"><i class="fas fa-list-ol">&nbsp;</i> Activities </h3>
                     <p id="activities" class="indented collapse">
-                        Activity   <br>
-                            Leadership position (if any)
-                        Activity   <br>
-                            Leadership position (if any)
+                        Boy Scouts <br>
+                        &nbsp;&nbsp;- Eagle Scout (Troop 16)
+                            <br>
+                            <br>
+                        Student Council  <br>
+                          &nbsp;&nbsp;- Key club member <br>
+                          &nbsp;&nbsp;- ASB Treasuer
+                            <br>
+                            <br>
+                        Computer Science Club  <br>
+                          &nbsp;&nbsp;- Co-President
                     </p>
                 <div class="spacer-small"> </div>
 
-              <h3 data-toggle="collapse" data-target="#skills"> Skills </h3>
+              <h3 data-toggle="collapse" data-target="#skills"><i class="fas fa-certificate">&nbsp;</i> Skills </h3>
                     <p id="skills" class="indented collapse">
-                      What skills?
+                      Some experince with web design (HTML, CSS, JavaScript, jQuery),  
+                      Express and Node.JS, Java programming, and iOS app design.
                     </p>
 
 
@@ -609,7 +958,9 @@
             <h2>Contact me</h2>
             <br>
             <p class="indented lead">
-              <a href="mailto:isaacteuscher?Subject=Comment%20on%20personal%20website" target="_top">isaacteuscher@gmail.com</a>
+              <a href="mailto:isaacteuscher?Subject=Comment%20on%20personal%20website" target="_top">
+                <i style="padding-right: 5px;" class="far fa-lg fa-envelope"></i>isaacteuscher@gmail.com
+              </a>
             </p>
             <br>
 
@@ -684,7 +1035,6 @@
         });
         })(jQuery);
     </script>
-
 
   </body>
 
