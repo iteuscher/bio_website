@@ -180,7 +180,7 @@ article {
 /* nav bar styling */
 .navbar {
 	width:100%;
-	z-index:9;
+	z-index:35;
 	padding-top: 0.5ex;
 	padding-bottom: 0.5ex;
 }
@@ -230,7 +230,7 @@ hamburger -> x */
   padding: 0;
   display: block;
   background: #fff;
-  width: 4.1em;
+  width: 4.3em;
   height: 0.2rem;
   border-radius: 0.25rem;
   margin: 0 auto;

@@ -149,15 +149,15 @@ span {
   text-align: center;
   font-size: 0.75em;
   margin: 0 auto;
+  align-items: center;
   /* border-bottom: 2px solid #f5f5f5; */
 }
 
 
 .filtertitle {
-  font-size: 2em;
-  margin:  auto;
+  font-size: 1.5em;
+  margin-bottom:  0.4rem;
   font-weight: 500;
-  font-family: "Playfair Display", serif;
   text-align: center;
   padding-bottom: 5px;
   /* margin-left: 0.5ex; */
@@ -166,8 +166,7 @@ span {
 
 /* Tagsport sorting styles */
 .tags-container span  {
-  /* display:inline-block; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   border:1px solid #CCC;
   color:#AAA;
@@ -176,31 +175,51 @@ span {
   padding:4px 4px;
   margin:5px;
   cursor:pointer;
-  border-radius:1.2em;
+  border-radius:1.2em; 
   -moz-border-radius:12px;
-  -webkit-border-radius:12px;
+  -webkit-border-radius:12px; */
   -webkit-transition:all .2s ease-in-out;
   -moz-transition:all .2s ease-in-out;
   -o-transition:all .2s ease-in-out;
-  transition:all .2s ease-in-out;
+  transition:all .2s ease-in-out; 
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor:pointer;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0,0,0,.6);
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: #eceff1;
+  margin-bottom: 0.7rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.15), 0 2px 10px 0 rgba(0,0,0,.10);
 
   }
 
-  /* .tags-container span:hover{
-    border:2px solid #000;color:#FFF;background-color:#000
-  } */
-
   .tags-container span.tagsort-active{
-    border:1px solid #000;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.45), 0 2px 10px 0 rgba(0,0,0,.4);
     color:#000;
     /* font-weight: bold; */
     background-color:transparent;
-    /* margin:5px 2px; */
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-      
-  }
+    /* border: 0.8px solid #81c483; */
+
+      /* Close Button */
+      /* color: #777;
+      font: 14px/100% arial, sans-serif;
+      position: absolute;
+      right: 5px;
+      text-decoration: none;
+      text-shadow: 0 1px 0 #fff;
+      top: 5px;
+      content: 'X'; */
+}
   /* end of tagsport */
 
 
