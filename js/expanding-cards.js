@@ -1,10 +1,13 @@
 
 ! function (t) {
+
+    //this.icon.attr("class", this.icon.attr("class").replace(/\bfa-.*\b/g, "")).addClass(this.options.icon_open), 
+    
     var i = function (i, n) {
         this.options = n, this.card = t(i), this.button = t(i).children(".mc-btn-action"), this.icon = t(i).children(".mc-btn-action").children("i"), this.card_activator = n.card_activator, this.timing = this.getTransitionTiming();
         var s = this;
         "click" == s.card_activator ? (this.icon.hasClass(this.options.icon_open) || 
-        this.icon.attr("class", this.icon.attr("class").replace(/\bfa-.*\b/g, "")).addClass(this.options.icon_open), 
+         
         this.button.on("click", function () {
             s.toggle()
         })) : 

@@ -223,6 +223,8 @@
   max-width: 100%;
   max-height: 100%;
   margin: 0 auto;
+  filter: grayscale(75%);
+    /* -webkit-filter: grayscale(100%); */
 }
 .material-card .img-container {
     overflow: hidden;

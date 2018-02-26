@@ -10,8 +10,8 @@ jQuery(document).ready(function($){
 	var marker_url = ( is_internetExplorer11 ) ? 'images/icons/cd-icon-location.png' : 'images/icons/cd-icon-location.svg';
 
 	//define the basic color of your map, plus a value for saturation and brightness
-	var	main_color = '#2d313f',
-		saturation_value= -20,
+	var main_color = '#28a745;',
+		saturation_value= -50,
 		brightness_value= 5;
 
 	//we define here the style of the map
