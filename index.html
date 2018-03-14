@@ -24,6 +24,10 @@
     <!--load up all font awesome icons-->
     <script src="fonts/fontawesome-all.js"></script>
 
+    <!-- Print.js -->
+    <script src="other/print-js/print.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="other/print-js/print.min.css">
+
     <!--Photo Swipe -->
       <link rel='stylesheet prefetch' href='other/photoswipe/css/photoswipe.min.css'>
       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
@@ -922,9 +926,16 @@
       <p class="lead"> 
         Click on a header to expand the section. 
         <!-- <br> -->
-        <a href="other/error.html"> Download as PDF
-          <!-- <i style="padding-left: 5px;" class="far fa-lg fa-file-alt"></i>-->
-        </a>
+
+        <a href="project-files/resume.jpg"> View</a>
+        or
+        <a href="project-files/resume.jpg" download> Download</a>
+        my résumé.
+
+        <!-- <button type="button" onclick=" printJS('project-files/resume.jpg', 'image');" >
+          Download/Print Resume
+        </button> -->
+
       </p>
 
               <h3 data-toggle="collapse" data-target="#contactinfo"><i class="fas fa-address-card">&nbsp;</i> Personal Info </h3>
@@ -1005,7 +1016,7 @@
             <h2>Contact me</h2>
             <br>
             <p class="indented lead">
-              <a href="mailto:isaacteuscher?Subject=Comment%20on%20personal%20website" target="_top">
+              <a href="mailto:isaacteuscher" target="_top">
                 <i style="padding-right: 5px;" class="far fa-lg fa-envelope"></i>isaacteuscher@gmail.com
               </a>
             </p>

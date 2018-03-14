@@ -3,14 +3,14 @@ jQuery(document).ready(function($){
 	//set to alameda 
 	var latitude = 37.7652100,
 		longitude =  -122.2416400,
-		map_zoom = 10;
+		map_zoom = 11;
 
 	//google map custom marker icon - .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
 	var marker_url = ( is_internetExplorer11 ) ? 'images/icons/cd-icon-location.png' : 'images/icons/cd-icon-location.svg';
 
 	//define the basic color of your map, plus a value for saturation and brightness
-	var main_color = '#28a745;',
+	var main_color = '#4CA2FF;',
 		saturation_value= -50,
 		brightness_value= 5;
 
