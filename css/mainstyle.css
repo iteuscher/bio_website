@@ -104,8 +104,6 @@ a:hover:after {
   opacity: 1;
 }
 
-
-
 h1 {
     color:rgb(255, 255, 255);
     font-family: Hind, sans-serif;
@@ -152,7 +150,6 @@ article {
   width: auto;
   display: block;
 }
-
 
 .circle-img {
   width: 30%;
@@ -202,8 +199,6 @@ article {
 }
 
 
-
-
 /* nav bar styling */
 .navbar {
 	width:100%;
@@ -228,16 +223,23 @@ article {
 width: 60%;
 }
 
+.navbar-brand:hover{
+  background-color: transparent;
+}
+
 .nav-link {
   text-decoration: none;
   font-style: normal;
+  background-color: transparent;
   outline:none !important;
 }
 
-/* .nav-link:hover {
-   text-decoration: underline;
-   text-decoration-color: #fff;
-} */
+.nav-link:hover{
+  background-color: transparent;
+  transition: all 0.2s;
+  text-decoration: underline;
+  text-decoration-color: white;
+}
 
 
 /* nav bar toggler animations 
@@ -502,7 +504,7 @@ social media buttons
     width:  6ex;
     height: 6ex;
     fill: currentColor;
-    transition: 0s;
+    transition: 0.1s;
 }
 
 .c-link--facebook:hover  { color: #3b5998 }
@@ -520,7 +522,14 @@ social media buttons
 
 .c-link {
     position: relative;
+    transition: all 0.05s;
+    white-space: initial;
     /*color: #bbb;*/
+}
+.c-link:hover{
+  background-color: transparent;
+  transition: all 0.05s;
+  white-space: initial;
 }
 
 .c-link:not(:last-of-type) {
@@ -534,7 +543,8 @@ social media buttons
     left: 50%;
     transform: translate(-50%, -30px);
     opacity: 0;
-    transition: 0.25s;
+    transition: 0.3s;
+    line-height: initial;
 }
 
 .c-tooltip::before {
@@ -547,8 +557,9 @@ social media buttons
 .c-tooltip::after {
     content: attr(aria-label);
     bottom: calc(100% + 12px);
-    padding: .61em .93em;
-    font-size: .875rem;
+    padding: 1rem;
+    line-height: 12px;
+    font-size: 0.9rem;
     color: white;
     border-radius: 3px;
 }
