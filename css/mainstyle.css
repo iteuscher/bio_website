@@ -32,22 +32,18 @@ a::-moz-selection {
 section {
   padding: 150px 0;
 }
-
 section.about {
   flex:1;
 }
-
 section.projects {
   flex:2;
 }
-
 section.grid {
   flex:3;
 }
 section.content {
   flex:4;
 }
-
 section.interests {
   flex:5;
 }
@@ -74,17 +70,42 @@ header {
 
 a{
   color: #343a40;
-  font-style: italic;
   text-decoration: underline;
   text-decoration-color: #a4e7ad;
-  /* outline: 0; */
+  font-weight: 300;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding-left: 3px;
+  padding-right: 3px;
+  -moz-transition: all 0.2s cubic-bezier(0.46, 0.01, 0.14, 1.35);
+  -o-transition: all 0.2s cubic-bezier(0.46, 0.01, 0.14, 1.35);
+  -webkit-transition: all 0.2s cubic-bezier(0.46, 0.01, 0.14, 1.35);
+  transition: all 0.2s cubic-bezier(0.46, 0.01, 0.14, 1.35);
 }
 
 a:hover{
-		color: #81c483;
+		color: white;
     text-decoration-color: #81c483;
     transition: all 0.2s;
+    background-color: #81c483;
 }
+
+a:hover:after {
+  -moz-transition: all 0.25s cubic-bezier(0.46, 0.01, 0.14, 1.35) 0.3s;
+  -o-transition: all 0.25s cubic-bezier(0.46, 0.01, 0.14, 1.35) 0.3s;
+  -webkit-transition: all 0.25s cubic-bezier(0.46, 0.01, 0.14, 1.35);
+  -webkit-transition-delay: 0.3s;
+  transition: all 0.25s cubic-bezier(0.46, 0.01, 0.14, 1.35) 0.3s;
+  -moz-transform: translate(-15px, 50%);
+  -ms-transform: translate(-15px, 50%);
+  -webkit-transform: translate(-15px, 50%);
+  transform: translate(-15px, 50%);
+  padding: 10px 15px;
+  max-height: 30px;
+  opacity: 1;
+}
+
+
 
 h1 {
     color:rgb(255, 255, 255);
@@ -123,17 +144,24 @@ article {
 
 
 .main-img {
-  background:
-    /* linear-gradient(
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)
-    ), */
+  /* background:
       url(../images/cloud_hi_photo.jpeg);
-  background-size: cover;
+  background-size: cover; */
+  background-color: #559ee8;
   height: 100vh;
   margin: 0 auto;
   width: auto;
   display: block;
+}
+
+
+.circle-img {
+  width: 30%;
+  padding: 15% 0;
+  margin: 1em auto;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid white;
 }
 
 .main-title {

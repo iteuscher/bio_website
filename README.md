@@ -22,3 +22,5 @@ This is my second attempt at making a personal website. I tried to make it elega
   - Cody House: custom google maps (https://codyhouse.co/gem/custom-google-map/)
   - Julien Melissas: Menu bar animation (hamburger to X)(https://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/)
 
+  - https://codemyui.com/reveal-link-via-drop-down-on-hover/
+

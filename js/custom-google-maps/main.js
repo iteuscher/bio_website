@@ -10,8 +10,8 @@ jQuery(document).ready(function($){
 	var marker_url = ( is_internetExplorer11 ) ? 'images/icons/cd-icon-location.png' : 'images/icons/cd-icon-location.svg';
 
 	//define the basic color of your map, plus a value for saturation and brightness
-	var main_color = '#4CA2FF;',
-		saturation_value= -50,
+	var main_color = '#4CA2FF',
+		saturation_value= -15,
 		brightness_value= 5;
 
 	//we define here the style of the map
@@ -159,7 +159,7 @@ jQuery(document).ready(function($){
 			stylers: [
 				{ hue: main_color },
 				{ visibility: "on" },
-				{ lightness: brightness_value },
+				{ lightness: -3 },
 				{ saturation: saturation_value }
 			]
 		},
@@ -169,7 +169,7 @@ jQuery(document).ready(function($){
 			stylers: [
 				{ hue: main_color },
 				{ visibility: "on" },
-				{ lightness: brightness_value },
+				{ lightness: 40 },
 				{ saturation: saturation_value }
 			]
 		},
