@@ -21,6 +21,8 @@ This is my second attempt at making a personal website. I tried to make it elega
   - Cody House: popup confirmation (https://codyhouse.co/gem/simple-confirmation-popup/)
   - Cody House: custom google maps (https://codyhouse.co/gem/custom-google-map/)
   - Julien Melissas: Menu bar animation (hamburger to X)(https://julienmelissas.com/animated-x-icon-for-the-bootstrap-navbar-toggle/)
-
-  - https://codemyui.com/reveal-link-via-drop-down-on-hover/
+  - Links idea: https://codemyui.com/reveal-link-via-drop-down-on-hover/
+  - Interests tabs: https://codepen.io/oknoblich/pen/tfjFl/
+  - Strava card:
+  https://codepen.io/marceloag/pen/nzLmu 
 
