@@ -24,21 +24,25 @@
     <!--load up all font awesome icons-->
     <script src="fonts/fontawesome-all.js"></script>
 
+    <!-- Slick image slideshow -->
+    <link rel="stylesheet" href="other/slick/slick.css" /> 
+    <link rel="stylesheet" href="other/slick/slick-theme.css" />
+
     <!-- Print.js -->
-    <script src="other/print-js/print.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="other/print-js/print.min.css">
+      <!-- <script src="other/print-js/print.min.js"></script>
+      <link rel="stylesheet" href="other/print-js/print.min.css"> -->
 
     <!--Photo Swipe -->
-      <link rel='stylesheet prefetch' href='other/photoswipe/css/photoswipe.min.css'>
+      <!-- <link rel='stylesheet prefetch' href='other/photoswipe/css/photoswipe.min.css'>
       <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
-      <link rel="stylesheet" href="other/photoswipe/css/photoswipe.css">
+      <link rel="stylesheet" href="other/photoswipe/css/photoswipe.css"> -->
 
     <!-- Slippry image slideshow -->
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-    <script src="other/slippry/dist/slippry.min.js"></script>
-    <link rel="stylesheet" href="other/slippry/dist/slippry.css">
-    <link rel="stylesheet" href="other/slippry/demo/demo.css"> -->
+      <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script src="other/slippry/dist/slippry.min.js"></script>
+      <link rel="stylesheet" href="other/slippry/dist/slippry.css">
+      <link rel="stylesheet" href="other/slippry/demo/demo.css"> -->
 
 
   </head>
@@ -90,13 +94,15 @@
     <div class="main-img" src="images/cloud_hi_photo.jpeg"> </div>
       <div class="container text-center main-title">
         <div class="spacer-large"> </div>
+        <div class="spacer-medium"></div>
         <h1>Isaac<br>Teuscher</h1>
         <div class="svg-wrapper">
           <div style="margin: 5ex;"> </div>
             <svg height="150" width="320">
                 <rect class="shape" height="150" width="320" />
             </svg>
-          <div class="lead"> Student, Developer &amp; Athlete</div>
+          <div class="lead">  &nbsp; </div>
+          <!-- <div class="lead"> hi <div> -->
         </div>
         
         <!-- <div class="circle-img"> </div> -->
@@ -348,7 +354,7 @@
                 <div class="spacer-small"> &nbsp; </div>
                 
                 <h3> Current Use </h3>
-                <p> The database has nearly 350 programs and has had over a thousand page views. It is used by students, teachers, and parents
+                <p> The database has 350+ programs and has had over a thousand page views. It is used by students, teachers, and parents
                   throughout the Head-Royce School community. </p>
 
                 <div class="spacer-very-small"> &nbsp; </div>
@@ -446,36 +452,83 @@
                   Matthew Chan, Jonathan Wu, and I made the game together using the 
                   <a href="https://unity3d.com" target="__blank">Unity Game Engine</a>.
                 </p>
-                
+
                 <div class="spacer-small"> &nbsp; </div>
 
-                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss2.png">
-                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss3.png">
-                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss4.png">
-                <div class="caption">Screenshots from the app</div>
-                <a onclick="plusDivs(-1)">
-                  <i class="far fa-2x fa-arrow-alt-circle-left"></i>
-                </a>
-                <a onclick="plusDivs(+1)">
-                  <i class="far fa-2x fa-arrow-alt-circle-right"></i>
-                </a>
-                <script>
-                  var slideIndex = 1;
-                  showDivs(slideIndex);
-                  function plusDivs(n) {
-                    showDivs(slideIndex += n);
-                  }
-                  function showDivs(n) {
-                    var i;
-                    var x = document.getElementsByClassName("slides1");
-                    if (n > x.length) { slideIndex = 1 }
-                    if (n < 1) { slideIndex = x.length }
-                    for (i = 0; i < x.length; i++) {
-                      x[i].style.display = "none";
-                    }
-                    x[slideIndex - 1].style.display = "block";
-                  }
-                </script>
+
+              
+                <div class="slideshow"> 
+                  <div class="slideshow-element"><img class="avg-image" src="project-files/MazeExplorer/ss2.png"></div>
+                  <div class="slideshow-element"><img class="avg-image" src="project-files/MazeExplorer/ss3.png"></div>
+                  <div class="slideshow-element"><img class="avg-image" src="project-files/MazeExplorer/ss4.png"></div>
+                </div>
+                <div class="caption">Screenshots of the gameplay</div>
+
+
+
+                <!-- OLD: <div class="slideshow">
+                                <div class="slideShow-prev slideShow-arrow" style="color: white;">
+                                  <svg class="slideShow-svg" viewBox="0 0 24 24">
+                                    <g fill="currentColor">
+                                      <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                                    </g>
+                                  </svg>
+                                </div>
+
+                                <div class="slideShow-next slideShow-arrow" style="color: white;">
+                                  <svg class="slideShow-svg" viewBox="0 0 24 24">
+                                    <g fill="currentColor">
+                                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                    </g>
+                                  </svg>
+                                </div>
+
+                                </div>
+
+
+                                <div class="spacer-small"> &nbsp; </div>
+
+                                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss2.png">
+                                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss3.png">
+                                <img class="slides1 avg-image" src="project-files/MazeExplorer/ss4.png">
+                                <div class="caption">Screenshots from the app</div>
+                                <a class="plain-link" onclick="plusDivs(-1)">
+                                  <div class="slideShow-prev slideShow-arrow" style="color: black;">
+                                    <svg class="slideShow-svg" viewBox="0 0 24 24">
+                                      <g fill="currentColor">
+                                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <i class="far fa-2x fa-arrow-alt-circle-left"></i>
+                                </a>
+                                <a class="plain-link" onclick="plusDivs(+1)">
+                                  <div class="slideShow-next slideShow-arrow" style="color: black;">
+                                    <svg class="slideShow-svg" viewBox="0 0 24 24">
+                                      <g fill="currentColor">
+                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
+                                      </g>
+                                    </svg>
+                                  </div>
+                                  <i class="far fa-2x fa-arrow-alt-circle-right"></i>
+                                </a>
+                                <script>
+                                  var slideIndex = 1;
+                                  showDivs(slideIndex);
+                                  function plusDivs(n) {
+                                    showDivs(slideIndex += n);
+                                  }
+                                  function showDivs(n) {
+                                    var i;
+                                    var x = document.getElementsByClassName("slides1");
+                                    if (n > x.length) { slideIndex = 1 }
+                                    if (n < 1) { slideIndex = x.length }
+                                    for (i = 0; i < x.length; i++) {
+                                      x[i].style.display = "none";
+                                    }
+                                    x[slideIndex - 1].style.display = "block";
+                                  }
+                                </script> -->
 
                 
                 <div class="spacer-small"> &nbsp; </div>
@@ -488,7 +541,7 @@
                 
                 <div class="spacer-very-small"> &nbsp; </div>
                 
-                <p class="note"> ** Maze Explorer is only available for OSX (Mac's). **</p>
+                <p class="note"> * Maze Explorer is only available for OSX (Mac's). *</p>
                 
                 <div class="spacer-very-small"> &nbsp; </div>
                 
@@ -713,18 +766,6 @@
            
       </div> <!-- /exp-grid-container -->
 
-        <!-- expanding grid scripts -->
-        <script src="js/expanding-grid/classie.js"></script>
-        <script src="js/expanding-grid/main.js"></script>
-        <!-- tagsport sorting scripts -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="js/expanding-grid/tagsport.js"></script>
-        <script type="text/javascript">
-          $(function () {
-            $('div.tags-container').tagSort({ items: '.item', tagElement: 'span', tagClassPrefix: 'tagsort-', itemTagsView: '.item-tags', itemTagsSeperator: ' / ', sortType: 'exclusive', 
-            fadeTime: 0 });
-          });
-        </script>
 
      <div class="spacer-medium"></div> 
     </div> <!-- /container -->
@@ -880,7 +921,7 @@
                     <div class="bio">
                       <img src="images/10hands.jpg" alt="background" class="bg">
                       <div class="desc">
-                        <p>The e-NABLE Community is an amazing group of individuals from all over the world who are using their 3D printers to create
+                        <p>The e-NABLE Community is a group of individuals from all over the world who are using their 3D printers to create
                         free 3D printed hands and arms for those in need of an upper limb assistive device.</p>
                       </div>
                     </div>
@@ -923,7 +964,7 @@
                 </div>
                 <p>
                    I'm a member of the LDS Church (commonly known as the Mormon Church). 
-                   I'm planning to serve a 2 year prostelyzing mission. 
+                   I'm planning to serve a 2 year sevice & proselytizing mission. 
                 </p>
                 <a target="_blank" class="indented" href="http://mormon.org"> <i class="fas fa-book">&nbsp;</i> Learn more about my church</a>
               </section>
@@ -944,7 +985,7 @@
 
                 <p>Delta Wolf 48 - an original short film which I wrote and directed</p>
                 <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Gqd3a6ABsU" allowfullscreen></iframe>
+                  <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3Gqd3a6ABsU" allowfullscreen></iframe> -->
                 </div>
                 
 
@@ -1219,11 +1260,6 @@
             	<address>Alameda, CA - USA</address>
             </div>
 
-          <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj2rz1T8Ore_NtjAw0kiu4619EgtK26sA"></script>
-          <script src="js/custom-google-maps/main.js"></script> <!-- Resource jQuery -->
-
-
           </div>
         </div>
       </div>
@@ -1235,50 +1271,82 @@
 
 
     <!-- Footer -->
-    <footer class="py-3 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white"> &copy; Isaac Teuscher 2018</p>
-                  <!-- <div class="cd-popup" role="alert">
-                      	<div class="cd-popup-container">
-                      		<p>Are you sure you want to delete this element?</p>
-                      		<ul class="cd-buttons">
-                      			<li><a href="#0">Yes</a></li>
-                      			<li><a href="#0">No</a></li>
-                      		</ul>
-                      		<a href="#0" class="cd-popup-close img-replace">Close</a>
-                      	</div>
-                      </div>  -->
-      </div>
-    </footer>
+      <footer class="py-3 bg-dark">
+        <div class="container">
+          <p class="m-0 text-center text-white"> &copy; Isaac Teuscher 2018</p>
+                    <!-- <div class="cd-popup" role="alert">
+                          <div class="cd-popup-container">
+                            <p>Are you sure you want to delete this element?</p>
+                            <ul class="cd-buttons">
+                              <li><a href="#0">Yes</a></li>
+                              <li><a href="#0">No</a></li>
+                            </ul>
+                            <a href="#0" class="cd-popup-close img-replace">Close</a>
+                          </div>
+                        </div>  -->
+        </div>
+      </footer>
 
 
   <!-- JAVA SCRIPTS below -->
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Scrolling nav JavaScript theme -->
-    <script src="js/scrolling-nav.js"></script>
+      <script src="js/scrolling-nav.js"></script>
 
 
     <!-- Fade in menu (navbar) script -->
       <!-- <script src="https://code.jquery.com/jquery-latest.js"></script> -->
-    <script type="text/javascript">
-        (function($) {
-        $(document).ready(function(){
-          $(window).scroll(function(){
-              if ($(this).scrollTop() > 200) {
-                  $('#menu').fadeIn(500);
-              } else {
-                  $('#menu').fadeOut(500);
-              }
+      <!-- <script type="text/javascript">
+          (function($) {
+          $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 400) {
+                    $('#menu').fadeIn(500);
+                } else {
+                    $('#menu').fadeOut(500);
+                }
+            });
+          });
+          })(jQuery);
+      </script> -->
+
+
+    <!-- Google maps scripts -->
+      <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj2rz1T8Ore_NtjAw0kiu4619EgtK26sA"></script>
+      <script src="js/custom-google-maps/main.js"></script>
+
+  
+    <!-- Expanding Grid scripts -->
+      <script src="js/expanding-grid/classie.js"></script>
+      <script src="js/expanding-grid/main.js"></script>
+      <!-- tagsport sorting scripts -->
+      <script src="js/expanding-grid/tagsport.js"></script>
+      <script type="text/javascript">
+        $(function () {
+          $('div.tags-container').tagSort({
+            items: '.item', tagElement: 'span', tagClassPrefix: 'tagsort-', itemTagsView: '.item-tags', itemTagsSeperator: ' / ', sortType: 'exclusive',
+            fadeTime: 0
           });
         });
-        })(jQuery);
-    </script>
-
+      </script>
+  
+    
+    <!-- Slick JS -->
+      <script src="other/slick/slick.js"></script>
+      <script>
+        $(function () {
+          $('.slideshow').slick({
+            dots: true
+          });
+        });
+      </script>
+    
   </body>
 
 </html>
