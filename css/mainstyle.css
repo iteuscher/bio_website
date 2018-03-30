@@ -205,23 +205,96 @@ background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  */
   border: 2px solid white;
 }
 
-.img-responsive {
-  width: 60%;
-  display:block;
-  margin: 0 auto;
-}
+/* responsive images */
+  .img-responsive {
+    width: 20em;
+    display:block;
+    margin: 0 auto;
+  }
+  .img-tall {
+    width: 20em;
+    display:block;
+    margin: 0 auto;
+  }
 
-.img-tall {
-  width: 40%;
-  display:block;
-  margin: 0 auto;
-}
+  .img-wide {
+    width: 22em;
+    display:block;
+    margin: 0 auto;
+  }
 
-.img-wide {
-  width: 70%;
-  display:block;
-  margin: 0 auto;
-}
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) { 
+    .img-responsive {
+      width:20em;
+    }
+    .img-tall{
+      width: 18em;
+    }
+    .img-wide {
+      width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) { 
+     .img-responsive, .img-tall {
+      width:95%;
+    }
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .img-responsive {
+      width:22em;
+    }
+    .img-tall{
+      width: 19em;
+    }
+    .img-wide {
+      width: 28em;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .img-responsive {
+      width:25em;
+    }
+    .img-tall{
+      width: 20em;
+    }
+    .img-wide {
+      width: 30em;
+    }
+  }
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .img-responsive {
+      width:25em;
+    }
+    .img-tall{
+      width: 21em;
+    }
+    .img-wide {
+      width: 32em;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .img-responsive {
+      width:28em;
+    }
+    .img-tall{
+      width: 22em;
+    }
+    .img-wide {
+      width: 35em;
+    }
+  }
+
+
+
+
 
 .img-container {
   padding-bottom: 15px;
@@ -469,6 +542,7 @@ responsive tabs
     -webkit-border-top-right-radius: 8px;
     border-top-right-radius: 8px; }
 
+
   .followcard-container {
     width: 320px;
     margin: 0.7em auto 1em auto;
@@ -488,6 +562,13 @@ responsive tabs
     width: 100%;
   }
 
+     @media screen and (max-width: 400px) {
+      .followcard-container {
+          width: 97%;
+      }
+    }
+
+
   .bio:hover > .desc {
     cursor: pointer;
     opacity: 1; }
@@ -501,6 +582,7 @@ responsive tabs
       padding: 0;
       margin: 0 auto;
     }
+
     .data li {
       width: 32%;
       text-align: center;
@@ -542,6 +624,7 @@ responsive tabs
     -moz-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in; }
+
     .desc p {
       font-size: .9em;
       font-family: 'Quicksand';

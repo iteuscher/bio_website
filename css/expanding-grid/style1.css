@@ -763,6 +763,12 @@ span {
   padding-top: 0.5rem;
 }
 
+@media screen and (max-width: 600px) {
+  .grid__item {
+    padding: 15px;
+  }
+}
+
 
 /* Viewport sizes based on column number and sidebar */
 /* 1 column */
