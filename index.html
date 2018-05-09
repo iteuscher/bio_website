@@ -27,6 +27,7 @@
     <!-- Slick image slideshow -->
     <link rel="stylesheet" href="other/slick/slick.css" /> 
     <link rel="stylesheet" href="other/slick/slick-theme.css" />
+    <link rel="stylesheet" href="other/aos/aos.css" />
 
     <!-- Print.js -->
       <!-- <script src="other/print-js/print.min.js"></script>
@@ -114,10 +115,13 @@
  
   <!-- About -->
     <section class="about" id="about">
+
       <div class="container">
         <!-- <div class="row"> -->
-          <div class="col-lg-8 mx-auto">
+          <div data-aos="fade-right" class="col-lg-8 mx-auto">
+            
             <h2>About</h2>
+
             <!-- <p class="lead">I'm Isaac Teuscher.</p> -->
             <p> I'm currently a senior at <a href="https://www.headroyce.org/about-us" target="_blank">Head-Royce School</a> in Oakland, CA.
                 <!-- I love rotisserie chicken, long beach runs, and even longer naps. -->
@@ -140,11 +144,12 @@
       </div>
 
 
+
       <div class="spacer spacer-medium"> &nbsp; </div>
 
     <!-- SOCIAL MEDIA BUTTONS -->
       <div class="container">
-        <div id="socialbox">
+        <div id="socialbox" data-aos="fade-right">
               <a href="https://www.facebook.com/isaac.teuscher" class="c-link c-link--facebook c-tooltip" aria-label="Facebook">
                   <svg class="c-icon">
                       <use xlink:href="#icon--facebook"></use>
@@ -199,7 +204,7 @@
   <!--Projects-->
     <section id="projects" class="projects bg-light">
       <div class="container">
-          <div class="col-lg-8 mx-auto">
+          <div data-aos="fade-right" class="col-lg-8 mx-auto">
             <h2>Projects</h2>
             <p class="lead">Work I've done or am currently working on.</p>
             <div class="spacer-small"></div>
@@ -788,7 +793,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-10 mx-auto">
-            <h2>Interests</h2>
+            <div data-aos="fade-left">
+              <h2>Interests</h2>
+            </div>
             <!-- <p class="lead">What I <i class="far fa-heart"></i> to do.</p> -->
             <main>
               <input id="tab1" type="radio" name="tabs" checked>
@@ -1154,6 +1161,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto">
+              
+              <div data-aos="fade-right">
 
           <h2>Resume</h2>
       <p class="lead"> 
@@ -1168,6 +1177,8 @@
         <!-- <button type="button" onclick=" printJS('project-files/resume.jpg', 'image');" >
           Download/Print Resume
         </button> -->
+
+              </div>
 
       </p>
 
@@ -1288,14 +1299,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact me</h2>
-            <br>
-            <p class="indented lead">
-              <a href="mailto:isaacteuscher" target="_top">
-                <i style="padding-right: 5px;" class="far fa-lg fa-envelope"></i>isaacteuscher@gmail.com
-              </a>
-            </p>
-            <br>
+            <div data-aos="fade-left">
+              <h2>Contact me</h2>
+              <br>
+              <p class="indented lead">
+                <a href="mailto:isaacteuscher" target="_top">
+                  <i style="padding-right: 5px;" class="far fa-lg fa-envelope"></i>isaacteuscher@gmail.com
+                </a>
+              </p>
+              <br>
+            </div>
+
 
     <!-- custom google maps location div -->
           <!--  <link rel="stylesheet" href="css/custom-google-maps/reset.css"> -->  <!-- CSS reset -->
@@ -1395,7 +1409,16 @@
           });
         });
       </script>
-    
+   
+    <!-- Animate on Scroll (AOS) -->
+      <script src="other/aos/aos.js"></script>
+      <script>
+        AOS.init({
+          easing: 'ease-in-out-sine'
+        });
+      </script>
+  
+  
   </body>
 
 </html>

@@ -70,7 +70,7 @@ header {
 	padding: -150px 0;
 }
 
-a{
+a {
   color: #343a40;
   text-decoration: underline;
   text-decoration-color: #a4e7ad;
@@ -367,7 +367,7 @@ background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  */
   } */
 
   .navbar-icon{
-  width: 60%;
+  width: 50%;
   }
 
   .navbar-brand:hover{
@@ -410,7 +410,7 @@ hamburger -> x */
     display: block;
     background: #fff;
     width: 4.2em;
-    height: 0.19rem;
+    height: 0.192rem;
     border-radius: 0.2rem;
     margin: 0 auto;
   }
@@ -513,7 +513,8 @@ responsive tabs
   input:checked + label {
     color: #555;
     border: 1px solid #ddd;
-    border-top: 3px solid skyblue;
+    border-top: 3px solid #81c483;
+    
     border-bottom: 1px solid #fff;
   }
 
