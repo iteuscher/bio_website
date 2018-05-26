@@ -1154,11 +1154,16 @@ social media buttons
     align-content: center;
     min-height: 15ex;
   }
+  #socialbox a:hover {
+    background-color: initial;
+    transition: all 0s !important;
+  }
+
   .c-icon {
       width:  6ex;
       height: 6ex;
       fill: currentColor;
-      transition: 0.1s;
+      transition: all 0s !important;
   }
 
   .c-link--facebook:hover  { color: #3b5998 }
@@ -1197,8 +1202,9 @@ social media buttons
       left: 50%;
       transform: translate(-50%, -30px);
       opacity: 0;
-      transition: 0.3s;
+      transition: 0.2s;
       line-height: initial;
+      transition: all 0.2s !important;
   }
 
   .c-tooltip::before {
